@@ -3,7 +3,7 @@
     min-height: 88vh;
     top:12vh;
 }
-.sidebar-ul{
+.sidebar-list{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
