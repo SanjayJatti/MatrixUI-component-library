@@ -1,0 +1,30 @@
+.avatar-container{
+    margin: 2rem;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.avatar{
+    border-radius: 50%;
+    border: 1x solid var(--secondary-color)
+}
+.avatar-xsm{
+    width: 2rem;
+    height: 2rem;
+}
+.avatar-sm{
+    width: 3rem;
+    height: 3rem;
+}
+.avatar-md{
+    width: 4rem;
+    height: 4rem;
+}
+.avatar-lg{
+    width: 5rem;
+    height: 5rem;
+}
+.circular-border{
+    border: 3px solid var(--primary-color)
+}
