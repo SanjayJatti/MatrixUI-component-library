@@ -1,0 +1,30 @@
+.sidebar{
+    position: fixed;
+    min-height: 88vh;
+    top:12vh;
+}
+.sidebar-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 88vh;
+    width: 20vw;
+    border-right: 1px solid var(--light-secondary-color);
+    text-align: center;
+    background: white;
+}
+.sidebar-item{
+    font-size: 1.6rem;
+    font-weight:500;
+    color: var(--secondary-color);
+    padding: 0.5rem;
+    display: inline;
+}
+.sidebar-item:hover{
+    background: var(--light-primary-color);
+}
+.sidebar-active{
+    color: var(--primary-color);
+    font-weight: 800;
+    background: var(--light-primary-color);
+}
