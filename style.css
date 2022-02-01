@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@import url("./Componets/Avatar/avatar.css");
 @import url("./Layout/Header/header.css");
 @import url("./Layout/Sidebar/sidebar.css");
 @import url("./Componets/Alert/alert.css");
+@import url("./Componets/Avatar/avatar.css");
+@import url("./Componets/Badge/badge.css");
+
 
 *{
     margin: 0;
@@ -50,6 +52,10 @@ h2{
 h3{
     font-size: 2rem;
     line-height: 2.8rem;
+}
+h4{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 p{

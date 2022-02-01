@@ -1,0 +1,51 @@
+.badge-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    font-size: 1rem;
+}
+.badge{
+    padding: 0.35rem;
+    font-size: 0.5rem;
+    color: white;
+    font-size: inherit;
+}
+.pill-badge{
+   border-radius:0.65rem ;
+}
+.icon-badge-wrapper,
+.avatar-badge-wrapper{
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.icon-badge,
+.avatar-badge{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    bottom: 70%;
+    left: 70%;
+    color: white;
+    padding: 3px;
+    font-size: 1rem;
+}
+.bg-primary{
+    background-color: var(--primary-color);
+}
+.bg-secondary{
+    background-color: var(--secondary-color);
+}
+.bg-success{
+    background-color: var(--success-color);
+}
+.bg-danger{
+    background-color: var(--danger-color);
+}
+.bg-warning{
+    background-color: var(--warning-color);
+}
+
