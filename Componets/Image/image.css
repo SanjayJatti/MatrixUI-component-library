@@ -8,10 +8,12 @@
     height: auto;
 }
 .img-square{
+    object-fit: cover;
     width: 200px;
     height: 200px;
 }
 .img-round{
+    object-fit: cover;
     width: 200px;
     height: 200px;
     border-radius: 50%;
