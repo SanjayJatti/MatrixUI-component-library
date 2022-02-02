@@ -4,7 +4,7 @@
 @import url("./Componets/Alert/alert.css");
 @import url("./Componets/Avatar/avatar.css");
 @import url("./Componets/Badge/badge.css");
-
+@import url("./Componets/Button/button.css");
 
 *{
     margin: 0;
@@ -115,7 +115,7 @@ li {
 /* Documentation site utility classes */
 .carbon-container {
     max-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 2rem;
     display: flex;
   }
