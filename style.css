@@ -3,6 +3,7 @@
 @import url("./Layout/Header/header.css");
 @import url("./Layout/Sidebar/sidebar.css");
 @import url("./Componets/Alert/alert.css");
+@import url("./Componets/Button/button.css");
 
 *{
     margin: 0;
@@ -50,6 +51,10 @@ h2{
 h3{
     font-size: 2rem;
     line-height: 2.8rem;
+}
+h4{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 p{
@@ -109,7 +114,7 @@ li {
 /* Documentation site utility classes */
 .carbon-container {
     max-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 2rem;
     display: flex;
   }
