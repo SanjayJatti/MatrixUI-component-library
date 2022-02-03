@@ -8,6 +8,7 @@
 @import url("./Componets/Image/image.css");
 
 
+
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@ html{
     --warning-color: #f59e0b;
     --dark-warning-color: #d97706;
     --light-warning-color:#ffee99;
-    --shadow: 0 1px 5px rgba(104 104 104 0.8)
+    --shadow: 0 1px 5px rgba(104 104 104 0.8);
 }
 
 body{

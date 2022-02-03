@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation|Input</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--------- header---------->
+    <header class="header-container">
+        <a href="#" class="nav-link header-title"><h2>Matrix <span>UI</span></h2></a>
+       
+        <ul class="nav-list nav-items">
+            <li class="nav-item ">
+                <a class="nav-link " href="#">Home</a> </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Documentation</a></li>
+
+        </ul>
+        <ul class="nav-list nav-social-media">
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/__sanjay13"><i class="fab fa-twitter"></i></a> </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/SanjayJatti"><i class="fab fa-github"></i></a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a></li>
+        </ul> 
+    </header>
+      <!--------- sidebar---------->
+    <div class="sidebar">
+        <ul class = "sidebar-list">
+            <a href = "" class = "sidebar-item">Avatar</a>
+            <a href = "" class = "sidebar-item">Alert</a>
+            <a href = "" class = "sidebar-item">Badges</a>
+            <a href = "" class = "sidebar-item ">Buttons</a>
+            <a href = "" class = "sidebar-item">Cards</a>
+            <a href = "" class = "sidebar-item">Responsive Images</a>
+            <a href = "" class = "sidebar-item sidebar-active">Forms</a>
+            <a href = "" class = "sidebar-item">Modal</a>
+            <a href = "" class = "sidebar-item">Navbar</a>
+            <a href = "" class = "sidebar-item">List</a>
+            <a href = "" class = "sidebar-item">Responsive Grid</a>
+            <a href = "" class = "sidebar-item">Typography</a>
+        </ul>
+    </div>
+      <!--------- Input---------->
+    <div class="page-wrapper">
+        <h2>Forms & Inputs</h2>
+        <p class="vertical-gutter-md">Inputs are necessary for user interaction with the website. Inputs are used to take information from the user, and then save the data to the server, accordingly.</p>
+        
+        <!------ Labeled Inputs -------->
+        <h4 class="vertical-gutter-md">Labeled Inputs</h4>
+        <form class="form-container">
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="input-container">
+                <label for="email">Email*</label>
+                <input required type="email" name="email" id="email" placeholder="example@xyz.com" >
+            </div>
+            <div class="input-container">
+                <label for="Country">Country(Disabled Input)</label>
+                <input disabled type="text" name="Country" id="Country" value="India">
+            </div>
+            <div class="input-container">
+                <label for="state">State(Read Only Input)</label>
+                <input readonly type="text"  name="state" id="state" value="Maharashtra" >
+            </div>
+        </form>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=821.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=142%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522form-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522username%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522username%2522%2520id%253D%2522username%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522email%2522%2520name%253D%2522email%2522%2520id%253D%2522email%2522%2520placeholder%253D%2522example%2540xyz.com%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522Country%2522%253ECountry%28Disabled%2520Input%29%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520disabled%2520type%253D%2522text%2522%2520name%253D%2522Country%2522%2520id%253D%2522Country%2522%2520value%253D%2522India%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522state%2522%253EState%28Read%2520Only%2520Input%29%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520readonly%2520type%253D%2522text%2522%2520%2520name%253D%2522state%2522%2520id%253D%2522state%2522%2520value%253D%2522Maharashtra%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="width: 882px; height: 471px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+    
+        <!------- Success and Error Input ------->
+        <h4 class="vertical-gutter-md"> Success and Error Input</h4>
+        <form class="form-container">
+            <div class="input-container input-error">
+                <label for="password">Password</label>
+                <input required type="password" name="password" id="password">
+                <div class="validity-msg">
+                    Oops! Minimum 8 characters & at least one digit needed.
+                </div>
+            </div>
+            <div class="input-container input-success">
+                <label for="password-confirm">Confirm Password</label>
+                <input required type="password" name="password-confirm" id="password-confirm">
+                <div class="validity-msg">
+                  Password successfully matched!
+                </div>
+            </div>
+        </form>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=804.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=142%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522form-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2520input-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520id%253D%2522password%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522validity-msg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Oops%21%2520Minimum%25208%2520characters%2520%2526%2520at%2520least%2520one%2520digit%2520needed.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2520input-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password-confirm%2522%253EConfirm%2520Password%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522password%2522%2520name%253D%2522password-confirm%2522%2520id%253D%2522password-confirm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522validity-msg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Password%2520successfully%2520matched%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="width: 830px; height: 398px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+        <!------- Input List ------>
+        <h4 class="vertical-gutter-md" >Input List</h4>
+        <form class="form-container">
+            <div class="input-container">
+                <label for="branch">Select your branch from list:</label>
+                <input list="branches" name="branch" id="branch">
+                <datalist id="branches">
+                    <option value="Computer Science">
+                    <option value="Information Technology">
+                    <option value="Mechanical">
+                    <option value="Electrical">
+                    <option value="Civil">
+                  </datalist>
+            </div>
+        </form>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=671.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=142%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522form-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522branch%2522%253ESelect%2520your%2520branch%2520from%2520list%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520list%253D%2522branches%2522%2520name%253D%2522branch%2522%2520id%253D%2522branch%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdatalist%2520id%253D%2522branches%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522Computer%2520Science%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522Information%2520Technology%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522Mechanical%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522Electrical%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522Civil%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdatalist%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="width: 654px; height: 319px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+        <!------ Text Area ------>
+        <h4 class="vertical-gutter-md">Text Area</h4>
+        <div class="form-container">
+            <label for="introduction">Introduce youself</label>
+            <textarea id="introduction" name="introduction" rows="5" cols="30" placeholder=""></textarea>
+        </div>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=825.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=142%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522introduction%2522%253EIntroduce%2520youself%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctextarea%2520id%253D%2522introduction%2522%2520name%253D%2522introduction%2522%2520rows%253D%25225%2522%2520cols%253D%252230%2522%2520placeholder%253D%2522%2522%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="width: 923px; height: 160px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+        <!------- Checkboxes -------->
+        <h4 class="vertical-gutter-md">Checkboxes</h4>
+        <form class="form-container">
+            <div class="input-checkbox">
+                <input checked type="checkbox" id="game1" name="game1" value="cricket">
+                <label for="game1">Cricket</label>
+            </div>
+            <div class="input-checkbox">  
+            <input disabled type="checkbox" id="game2" name="game2" value="football">
+            <label for="game2"> Football</label>
+            </div>
+            <div class="input-checkbox">
+                <input type="checkbox" id="game3" name="game3" value="Tennis">
+                <label for="game3"> Tennis</label>
+            </div>
+        </form>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=804.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=142%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522form-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520checked%2520type%253D%2522checkbox%2522%2520id%253D%2522game1%2522%2520name%253D%2522game1%2522%2520value%253D%2522cricket%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522game1%2522%253ECricket%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-checkbox%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520disabled%2520type%253D%2522checkbox%2522%2520id%253D%2522game2%2522%2520name%253D%2522game2%2522%2520value%253D%2522football%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522game2%2522%253E%2520Football%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522game3%2522%2520name%253D%2522game3%2522%2520value%253D%2522Tennis%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522game3%2522%253E%2520Tennis%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="width: 771px; height: 358px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+
+        <!------- Radio Buttons ------->
+        <h4 class="vertical-gutter-md">Radio Buttons</h4>
+        <form class="form-container">
+            <p>Please select your favorite Web language:</p>
+            <div class="input-radio">
+                <input type="radio" id="c++" name="fav_language" value="C++">
+                <label for="c++">C++</label>
+            </div>
+            <div class="input-radio">
+                <input type="radio" id="java" name="fav_language" value="Java">
+                <label for="java">Java</label>   
+            </div>
+            <div class="input-radio">
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>        
+            </div>
+        </form>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=804.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=142%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522form-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EPlease%2520select%2520your%2520favorite%2520Web%2520language%253A%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522c%252B%252B%2522%2520name%253D%2522fav_language%2522%2520value%253D%2522C%252B%252B%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522c%252B%252B%2522%253EC%252B%252B%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522java%2522%2520name%253D%2522fav_language%2522%2520value%253D%2522Java%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25C2%25A0%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522java%2522%253EJava%253C%252Flabel%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25C2%25A0%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522javascript%2522%2520name%253D%2522fav_language%2522%2520value%253D%2522JavaScript%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25C2%25A0%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522javascript%2522%253EJavaScript%253C%252Flabel%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="width: 806px; height: 378px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+        <!--------- Form --------->
+        <h4 class="vertical-gutter-md">Form</h4>
+        <form class="form-container">
+            <h4>Sign Up</h4>
+            <div class="input-container">
+                <label for="username">Username*</label>
+                <input required type="text" name="username" id="username">
+            </div>
+            <div class="input-container">
+                <label for="email">Email*</label>
+                <input required type="email" name="email" id="email" placeholder="example@xyz.com" >
+            </div>
+            <div class="input-container">
+                <label for="password">Password*</label>
+                <input required type="password" name="password" id="password">
+            </div>
+            <div class="input-container vertical-gutter-md">
+                <label for="password-confirm">Confirm Password*</label>
+                <input required type="password" name="password-confirm" id="password-confirm">
+            </div>
+            <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=804.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=142%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522form-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253ESign%2520Up%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522username%2522%253EUsername*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522text%2522%2520name%253D%2522username%2522%2520id%253D%2522username%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522email%2522%2520name%253D%2522email%2522%2520id%253D%2522email%2522%2520placeholder%253D%2522example%2540xyz.com%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520id%253D%2522password%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-container%2520vertical-gutter-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password-confirm%2522%253EConfirm%2520Password*%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520required%2520type%253D%2522password%2522%2520name%253D%2522password-confirm%2522%2520id%253D%2522password-confirm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520type%253D%2522submit%2522%2520class%253D%2522btn%2520btn-primary%2522%253ESign%2520up%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="width: 881px; height: 478px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+
+         
+        
+
+      
+    </div>   
+</body>
+</html>
