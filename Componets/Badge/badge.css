@@ -3,13 +3,18 @@
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .badge{
-    padding: 0.35rem;
+    padding: 0.4rem;
     font-size: 0.5rem;
     color: white;
-    font-size: inherit;
+    font-size: 1.2rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
 }
 .pill-badge{
    border-radius:0.65rem ;
