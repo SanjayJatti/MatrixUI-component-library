@@ -1,0 +1,73 @@
+
+.form-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+    max-width: 25rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1.6rem;
+}
+input,
+textarea{
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--light-secondary-color);
+    width: 100%;
+    font-size: 1.6rem;
+}
+label{
+    font-size: 1.6rem;
+}
+
+input:focus,
+textarea:focus {
+	border-color: var(--secondary-color);
+}
+
+input[type='email']:valid {
+	background-color: var(--light-success-color);
+	color: var(--dark-success-color);
+}
+
+.input-error{
+    color: var(--danger-color);
+}
+
+.input-error input{
+    border-color: var(--danger-color);
+}
+
+.input-success{
+    color: var(--success-color);
+}
+.input-success input{
+    border-color: var(--success-color);
+}
+.validity-msg{
+    font-size: 1rem;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	cursor: pointer;
+	height: 1rem;
+	width: 1rem;
+}
+
+.input-checkbox{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+}
