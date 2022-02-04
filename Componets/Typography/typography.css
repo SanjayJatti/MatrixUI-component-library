@@ -1,0 +1,70 @@
+/*Typography*/
+
+h1{
+    font-size: 3rem;
+    line-height: 3.8rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+}
+
+h3{
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+h4{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+h5{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: justify;
+}
+
+.text-box{
+    padding: 1rem;
+    border: 2px solid var(--light-secondary-color);
+    margin: 0.5rem; 
+    font-size: 1.6rem; 
+}
+
+.text-small{
+    font-size: 1rem;
+}
+.text-grey{
+    color: var(--light-secondary-color);
+    font-size: inherit;
+}
+.text-center{
+    font-size: inherit;
+    text-align: center;
+}
+.text-left{
+    font-size: inherit;
+    text-align: left;
+}
+
+.text-right{
+    font-size: inherit;
+    text-align: right;
+}
+.text-mark{
+    background-color: var(--light-primary-color);
+    color: var(--secondary-color);
+    font-size: inherit;
+}
+.text-strikethrough{
+    text-decoration: line-through;
+}
+.text-light-weight{
+    opacity: 0.7;
+    font-weight: lighter;
+}
