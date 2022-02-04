@@ -9,6 +9,7 @@
 @import url('./Componets/Input/input.css');
 @import url("./Componets/Card/card.css");
 @import url("./Componets/Typography/typography.css");
+@import url("./Componets/Modal/modal.css");
 
 
 
@@ -39,6 +40,10 @@ html{
     --dark-warning-color: #d97706;
     --light-warning-color:#ffee99;
     --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --z-index-5: 5;
+    --z-index-4: 4;
+    --z-index-3: 3;
+    --z-index-2: 2;
 }
 
 body{
@@ -67,6 +72,9 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.m-auto{
+    margin: auto;
 }
 
 /*Spacing*/
@@ -99,14 +107,14 @@ li {
     width: 100%;
     /* overflow: hidden; */
     margin-top: 2rem;
+  }
+
+.page-wrapper{
+    position: relative;
+    margin-left: 20vw;
+    top: 12vh;
+    padding:2rem 4.8rem;
     display: flex;
-  }
-  .page-wrapper{
-      position: relative;
-      margin-left: 20vw;
-      top: 12vh;
-      padding:2rem 4.8rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
+    flex-direction: column;
+    justify-content: space-between;
+}
