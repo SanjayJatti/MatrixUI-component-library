@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation| Modal</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--------- header---------->
+    <header class="header-container">
+        <a href="#" class="nav-link header-title"><h2>Matrix <span>UI</span></h2></a>
+       
+        <ul class="nav-list nav-items">
+            <li class="nav-item ">
+                <a class="nav-link " href="#">Home</a> </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Documentation</a></li>
+
+        </ul>
+        <ul class="nav-list nav-social-media">
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/__sanjay13"><i class="fab fa-twitter"></i></a> </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/SanjayJatti"><i class="fab fa-github"></i></a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a></li>
+        </ul> 
+    </header>
+      <!--------- sidebar---------->
+    <div class="sidebar">
+        <ul class = "sidebar-list">
+            <a href = "" class = "sidebar-item">Avatar</a>
+            <a href = "" class = "sidebar-item">Alert</a>
+            <a href = "" class = "sidebar-item">Badges</a>
+            <a href = "" class = "sidebar-item">Buttons</a>
+            <a href = "" class = "sidebar-item">Cards</a>
+            <a href = "" class = "sidebar-item ">Responsive Images</a>
+            <a href = "" class = "sidebar-item">Forms</a>
+            <a href = "" class = "sidebar-item sidebar-active">Modal</a>
+            <a href = "" class = "sidebar-item">Navbar</a>
+            <a href = "" class = "sidebar-item">List</a>
+            <a href = "" class = "sidebar-item">Responsive Grid</a>
+            <a href = "" class = "sidebar-item">Typography</a>
+        </ul>
+    </div>
+      <!--------- Typography---------->
+    <div class="page-wrapper">
+        <h2>Modal</h2>
+        <p class="vertical-gutter-md">Modals are positioned over everything else in the document and remove scroll from the page. It gets closed only with close button on modal pop-up.</p>
+    
+        <div class="modal-container m-auto">
+            <div class="modal-header">
+                <h4>Modal title</h4>
+                <span class="close-icon"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="modal-body">
+                <p>You can add modal body text here</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary">Secondary</button>
+                <button class="btn btn-primary">Primary</button>
+            </div>
+        </div>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=325.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=131%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EModal%2520title%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EYou%2520can%2520add%2520modal%2520body%2520text%2520here%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="width: 679px; height: 337px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+ 
+        <h4 class="vertical-gutter-md">Delete Modal</h4>
+        <div class="modal-container m-auto">
+            <div class="modal-header">
+                <h4>Are you sure?</h4>
+                <span class="close-icon"  
+                onclick="this.parentNode.parentNode.style.display='none'">
+                <i class="fas fa-times"></i>
+            </span>
+            </div>
+            <div class="modal-body">
+                <p>Deleting this deletes the item from the database</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary"
+                onclick="this.parentNode.parentNode.style.display='none'">Cancel</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+        <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=720.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=131%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EAre%2520you%2520sure%253F%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close-icon%2522%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520onclick%253D%2522this.parentNode.parentNode.style.display%253D%27none%27%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EDeleting%2520this%2520deletes%2520the%2520item%2520from%2520the%2520database%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520onclick%253D%2522this.parentNode.parentNode.style.display%253D%27none%27%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDelete%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+              style="width: 772px; height: 375px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
