@@ -5,11 +5,13 @@
 @import url("./Componets/Avatar/avatar.css");
 @import url("./Componets/Badge/badge.css");
 @import url("./Componets/Button/button.css");
+@import url("./Componets/Card/card.css");
+@import url("./Componets/Chips/chips.css");
 @import url("./Componets/Image/image.css");
 @import url('./Componets/Input/input.css');
-@import url("./Componets/Card/card.css");
-@import url("./Componets/Typography/typography.css");
 @import url("./Componets/Modal/modal.css");
+@import url("./Componets/Typography/typography.css");
+
 
 
 
@@ -84,6 +86,14 @@ li {
     margin: auto;
 }
 
+.cursor-pointer{
+    cursor: pointer;
+}
+.font-inherit{
+    font-size: inherit;
+}
+
+
 /*Spacing*/
 
 .vertical-gutter-xs{
@@ -108,11 +118,13 @@ li {
 .vertical-gutter-xxl{
     margin-bottom: 6.4rem;
 }
+.pl-xxs{
+    padding-left: 0.5rem;
+}
 
 /* Documentation site utility classes */
 .carbon-container {
     width: 100%;
-    /* overflow: hidden; */
     margin-top: 2rem;
   }
 
@@ -125,3 +137,6 @@ li {
     flex-direction: column;
     justify-content: space-between;
 }
+/* iframe{
+    width: 100%;
+} */
