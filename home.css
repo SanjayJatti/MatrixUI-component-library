@@ -22,9 +22,33 @@
 .installation{
     padding: 5rem ;
 }
-.footer{
+.footer{ 
     background: white;
     padding: 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 680px) {
+    .nav-items li:nth-child(1){
+        display: none;
+    }
+    .nav-items li:nth-child(2){
+        margin-right: 1rem;
+    }
+    .nav-social-media{
+        display: none;
+    }
+
+    .hero{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .header-title{
+        margin-left: 0;
+    }
+
 }
