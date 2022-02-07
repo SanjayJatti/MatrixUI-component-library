@@ -30,6 +30,26 @@
 }
 
 @media only screen and (max-width: 680px) {
+    .open-slide{
+        display: block;
+    }
+    .sidebar{
+      display: none;
+
+    }
+    /* .sidebar-list{
+        width: 0;
+        display: none;
+    } */
+ 
+    .page-wrapper{
+        margin-left: 0;
+        left: 0;
+
+    }
+    .nav-items{
+        margin-left: 0.5rem;
+    }
     .nav-items li:nth-child(1){
         display: none;
     }
@@ -39,7 +59,9 @@
     .nav-social-media{
         display: none;
     }
-
+    .header-title{
+        font-size: 1rem;
+    }
     .hero{
         grid-template-columns: 1fr;
     }

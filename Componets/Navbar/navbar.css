@@ -9,6 +9,10 @@
     border-bottom: 1px solid #f1f1f1;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.open-slide i{
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
 .search-box{
     height: 1rem;
     padding: 1rem;

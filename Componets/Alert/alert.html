@@ -7,10 +7,15 @@
     <title>Documentation|Alert</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
     <!--------- header---------->
     <header class="header-container">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
+        </span>
+
         <a href="#" class="nav-link header-title"><h2>Matrix <span>UI</span></h2></a>
        
         <ul class="nav-list nav-items">
@@ -30,6 +35,24 @@
         </ul> 
     </header>
       <!--------- sidebar---------->
+      <div id="side-nav" class="side-menu">
+        <ul class = "side-menu-list">
+            <a href="#" class="sidemenu-close-btn" onclick="closeSlideMenu()">&times;</a>
+            <a href = "">Avatar</a>
+            <a href = "">Alert</a>
+            <a href = "">Badges</a>
+            <a href = "">Buttons</a>
+            <a href = "">Cards</a>
+            <a href = "">Responsive Images</a>
+            <a href = "">Forms</a>
+            <a href = "">Modal</a>
+            <a href = "">Navbar</a>
+            <a href = "">List</a>
+            <a href = "">Responsive Grid</a>
+            <a href = "">Typography</a>
+        </ul>
+    </div>
+
       <div class="sidebar">
         <ul class = "sidebar-list">
             <a href = "" class = "sidebar-item">Avatar</a>
@@ -47,7 +70,7 @@
         </ul>
     </div>
       <!--------- Alert---------->
-      <div class="page-wrapper">
+      <div id="main" class="page-wrapper">
         <h2>Alert</h2>
         <p class="vertical-gutter-md">Alerts are used to attract user's attention for important information without interrupting the user's flow. Copy the styles of different alerts and use it in your code</p>
         <div class="alert-container vertical-gutter-xl">
@@ -77,4 +100,13 @@
          </div>   
       </div>
 </body>
+<script>
+    function openSlideMenu(){
+    document.getElementById("side-nav").style.width = "250px";
+}
+function closeSlideMenu(){
+    document.getElementById("side-nav").style.width ="0";
+}
+
+</script>
 </html>

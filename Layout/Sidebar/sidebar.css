@@ -1,3 +1,44 @@
+
+.side-menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: var(--z-index-5);
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+    padding-top: 6rem;
+    transition: 0.5s;
+}
+.side-menu a{
+    padding: 1rem 1rem 1rem 3rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color:var(--secondary-color);
+    display: block;
+    transition: 0.3s;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+.side-menu a:hover{
+    color: white;
+}
+.side-menu .sidemenu-close-btn{
+    position: absolute;
+    top:0;
+    right: 2.2rem;
+    font-size: 3.6rem;
+    margin-left: 5rem;
+}
+
+/* #main{
+    transition: margin-left 0.5s;
+    overflow: hidden;
+    width: 100%;
+} */
 .sidebar{
     position: fixed;
     min-height: 88vh;
