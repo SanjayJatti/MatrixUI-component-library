@@ -10,6 +10,7 @@
 @import url("./Componets/Image/image.css");
 @import url('./Componets/Input/input.css');
 @import url("./Componets/Modal/modal.css");
+@import url("./Componets/Navbar/navbar.css");
 @import url("./Componets/Typography/typography.css");
 
 
@@ -137,6 +138,3 @@ li {
     flex-direction: column;
     justify-content: space-between;
 }
-/* iframe{
-    width: 100%;
-} */

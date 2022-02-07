@@ -46,7 +46,7 @@
     text-decoration: none;
     margin-bottom: 0.3rem;
 }
-.nav-link:hover{
+.nav-hover:hover{
     background-color: var(--light-primary-color);
 }
 .nav-link i{
