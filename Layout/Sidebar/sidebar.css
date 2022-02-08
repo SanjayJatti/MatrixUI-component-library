@@ -41,15 +41,17 @@
 } */
 .sidebar{
     position: fixed;
+    left: 0;
     min-height: 88vh;
     top:12vh;
+    width: 20vw;
 }
 .sidebar-list{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 88vh;
-    width: 20vw;
+    /* width: 20vw; */
     border-right: 1px solid var(--light-secondary-color);
     text-align: center;
     background: white;

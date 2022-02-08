@@ -1,5 +1,5 @@
-const sideNav = document.querySelector("#side-nav");
-const main = document.querySelector("#main");
+// const sideNav = document.querySelector("#side-nav");
+// const main = document.querySelector("#main");
 
 function openSlideMenu(){
     sideNav.style.width = "250px";
