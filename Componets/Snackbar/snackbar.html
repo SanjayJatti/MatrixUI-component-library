@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation|Snackbar</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
+    <script src="/sidebar.js"></script>
+ 
+</head>
+<body>
+    <!--------- header---------->
+    <header class="header-container">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
+        </span>
+
+        <a href="#" class="nav-link header-title"><h2>Matrix <span>UI</span></h2></a>
+       
+        <ul class="nav-list nav-items">
+            <li class="nav-item ">
+                <a class="nav-link " href="#">Home</a> </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Documentation</a></li>
+
+        </ul>
+        <ul class="nav-list nav-social-media">
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/__sanjay13"><i class="fab fa-twitter"></i></a> </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/SanjayJatti"><i class="fab fa-github"></i></a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a></li>
+        </ul> 
+    </header>
+      <!--------- sidebar---------->
+      <div id="side-nav" class="side-menu">
+        <ul class = "side-menu-list">
+            <a href="#" class="sidemenu-close-btn" onclick="closeSlideMenu()">&times;</a>
+            <a href = "">Avatar</a>
+            <a href = "">Alert</a>
+            <a href = "">Badges</a>
+            <a href = "">Buttons</a>
+            <a href = "">Cards</a>
+            <a href = "">Drawer</a>
+            <a href = "">Responsive Images</a>
+            <a href = "">Forms</a>
+            <a href = "">Modal</a>
+            <a href = "">Navbar</a>
+            <a href = "">List</a>
+            <a href = "">Responsive Grid</a>
+            <a href = "">Snackbar</a>
+            <a href = "">Typography</a>
+        </ul>
+    </div>
+
+      <div class="sidebar">
+        <ul class = "sidebar-list">
+            <a href = "" class = "sidebar-item">Avatar</a>
+            <a href = "" class = "sidebar-item ">Alert</a>
+            <a href = "" class = "sidebar-item">Badges</a>
+            <a href = "" class = "sidebar-item">Buttons</a>
+            <a href = "" class = "sidebar-item">Cards</a>
+            <a href = "" class = "sidebar-item ">Drawer</a>
+            <a href = "" class = "sidebar-item">Responsive Images</a>
+            <a href = "" class = "sidebar-item">Forms</a>
+            <a href = "" class = "sidebar-item">Modal</a>
+            <a href = "" class = "sidebar-item">Navbar</a>
+            <a href = "" class = "sidebar-item">List</a>
+            <a href = "" class = "sidebar-item">Responsive Grid</a>
+            <a href = "" class = "sidebar-item sidebar-active">Snackbar</a>
+            <a href = "" class = "sidebar-item">Typography</a>
+        </ul>
+    </div>
+      <!--------- Snackbar---------->
+      <div class="page-wrapper">
+          <h2>Snackbar</h2>
+          <p class="vertical-gutter-md">Snackbars provide brief messages about app processes at the bottom of the screen.</br>Copy the styles of snackbar and use it in your code</p>
+          <div class="snackbar-wrapper vertical-gutter-lg ">
+            <div class="snackbar-container">
+                <p>Can't send video. Retry in 5 seconds.</p>
+                <div class="snackbar-action">
+                    <a href="#" class="">RETRY</a>
+                    <a class=""><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=auto&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ECan%27t%2520send%2520video.%2520Retry%2520in%25205%2520seconds.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522snackbar-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253ERETRY%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="width: 561px; height: 206px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>          
+          </div>
+      </div>
+</body>
+</html>
