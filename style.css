@@ -8,12 +8,13 @@
 @import url("./Componets/Button/button.css");
 @import url("./Componets/Card/card.css");
 @import url("./Componets/Chips/chips.css");
+@import url("./Componets/Drawer/drawer.css");
 @import url("./Componets/Image/image.css");
 @import url('./Componets/Input/input.css');
 @import url("./Componets/Modal/modal.css");
 @import url("./Componets/Navbar/navbar.css");
+@import url("./Componets/Snackbar/snackbar.css");
 @import url("./Componets/Typography/typography.css");
-
 
 
 
@@ -49,6 +50,7 @@ html{
     --light-warning-color:#ffee99;
 
     --white: white;
+    --grayishWhite: #ccc;
 
     --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     --z-index-5: 5;
@@ -125,7 +127,7 @@ li {
 }
 
 /* Documentation site utility classes */
-.carbon-wrapper{
+.carbon-container{
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -151,6 +153,7 @@ li {
     justify-content: space-between;
     max-width:72vw;
 }
+
 @media only screen and (max-width: 680px) {
 
     *{
