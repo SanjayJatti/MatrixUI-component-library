@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation|Drawer</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
+    <script src="/sidebar.js"></script>
+ 
+</head>
+<body>
+    <!--------- header---------->
+    <header class="header-container">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
+        </span>
+
+        <a href="#" class="nav-link header-title"><h2>Matrix <span>UI</span></h2></a>
+       
+        <ul class="nav-list nav-items">
+            <li class="nav-item ">
+                <a class="nav-link " href="#">Home</a> </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Documentation</a></li>
+
+        </ul>
+        <ul class="nav-list nav-social-media">
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/__sanjay13"><i class="fab fa-twitter"></i></a> </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/SanjayJatti"><i class="fab fa-github"></i></a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a></li>
+        </ul> 
+    </header>
+      <!--------- sidebar---------->
+      <div id="side-nav" class="side-menu">
+        <ul class = "side-menu-list">
+            <a href="#" class="sidemenu-close-btn" onclick="closeSlideMenu()">&times;</a>
+            <a href = "">Avatar</a>
+            <a href = "">Alert</a>
+            <a href = "">Badges</a>
+            <a href = "">Buttons</a>
+            <a href = "">Cards</a>
+            <a href = "">Drawer</a>
+            <a href = "">Responsive Images</a>
+            <a href = "">Forms</a>
+            <a href = "">Modal</a>
+            <a href = "">Navbar</a>
+            <a href = "">List</a>
+            <a href = "">Responsive Grid</a>
+            <a href = "">Typography</a>
+        </ul>
+    </div>
+
+    <div class="sidebar">
+        <ul class = "sidebar-list">
+            <a href = "" class = "sidebar-item">Avatar</a>
+            <a href = "" class = "sidebar-item ">Alert</a>
+            <a href = "" class = "sidebar-item">Badges</a>
+            <a href = "" class = "sidebar-item">Buttons</a>
+            <a href = "" class = "sidebar-item">Cards</a>
+            <a href = "" class = "sidebar-item sidebar-active">Drawer</a>
+            <a href = "" class = "sidebar-item">Responsive Images</a>
+            <a href = "" class = "sidebar-item">Forms</a>
+            <a href = "" class = "sidebar-item">Modal</a>
+            <a href = "" class = "sidebar-item">Navbar</a>
+            <a href = "" class = "sidebar-item">List</a>
+            <a href = "" class = "sidebar-item">Responsive Grid</a>
+            <a href = "" class = "sidebar-item">Typography</a>
+        </ul>
+    </div>
+      <!--------- Drawer---------->
+      <div class="page-wrapper">
+          <h2>Drawer</h2>
+          <p class="vertical-gutter-md">The navigation drawer slides in from the left and contains the navigation destinations for your app.</br> Click on hamburger icon below to open the drawer</p>
+          <div class="drawer-container vertical-gutter-xxl">
+            <header class="drawer-header">
+                <span class="open-drawer">
+                    <a href="#" onclick="openDrawer()"><i class="fas fa-bars fa-10x"></i></a>
+                </span>
+            </header>
+              <div id="drawer" class="drawer-menu position-absolute">
+                <ul class = "drawer-menu-list">
+                    <a href="#" class="drawer-close-btn" onclick="closeSlideMenu()">&times;</a>
+                    <a href = "#" class="drawer-item"><i class="fas fa-inbox"></i><span>Inbox</span></a>
+                    <a href = "#" class="drawer-item"><i class="fas fa-star"></i><span>Star</span></a>
+                    <a href = "#" class="drawer-item"><i class="fas fa-paper-plane"></i><span>Sent Mail</span></a>
+                    <a href = "#" class="drawer-item"><i class="far fa-envelope-open"></i><span>Drafts</span></a>
+                </ul>
+            </div>
+          </div>
+          <div class="vertical-gutter-lg"></div>
+          <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=auto&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522drawer-container%2520vertical-gutter-xxl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522drawer-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522open-drawer%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520onclick%253D%2522openDrawer%28%29%2522%253E%253Ci%2520class%253D%2522fas%2520fa-bars%2520fa-10x%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522drawer%2522%2520class%253D%2522drawer-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%2520%253D%2520%2522drawer-menu-list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522drawer-close-btn%2522%2520onclick%253D%2522closeSlideMenu%28%29%2522%253E%2526times%253B%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522%2523%2522%2520class%253D%2522drawer-item%2522%253E%253Ci%2520class%253D%2522fas%2520fa-inbox%2522%253E%253C%252Fi%253E%253Cspan%253EInbox%253C%252Fspan%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522%2523%2522%2520class%253D%2522drawer-item%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253Cspan%253EStar%253C%252Fspan%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522%2523%2522%2520class%253D%2522drawer-item%2522%253E%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2522%253E%253C%252Fi%253E%253Cspan%253ESent%2520Mail%253C%252Fspan%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%2520%253D%2520%2522%2523%2522%2520class%253D%2522drawer-item%2522%253E%253Ci%2520class%253D%2522far%2520fa-envelope-open%2522%253E%253C%252Fi%253E%253Cspan%253EDrafts%253C%252Fspan%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="width: 999px; height: 372px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          
+          </div>
+          <div class="carbon-container flex-center vertical-gutter-lg">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=auto&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cscript%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520function%2520openDrawer%28%29%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520document.getElementById%28%2522drawer%2522%29.style.width%2520%253D%2520%2522250px%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520function%2520closeSlideMenu%28%29%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520document.getElementById%28%2522drawer%2522%29.style.width%2520%253D%25220%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%253C%252Fscript%253E"
+            style="width: 611px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+          
+          </div>
+
+      </div>
+    <script >
+        function openDrawer(){
+            document.getElementById("drawer").style.width = "250px";
+        }
+        function closeSlideMenu(){
+            document.getElementById("drawer").style.width ="0";
+        }
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-
+/* Drawer or slide-menu for small screens */
 .side-menu{
     height: 100%;
     width: 0;
@@ -34,11 +34,7 @@
     margin-left: 5rem;
 }
 
-/* #main{
-    transition: margin-left 0.5s;
-    overflow: hidden;
-    width: 100%;
-} */
+/* static-sidebar for large screens */
 .sidebar{
     position: fixed;
     left: 0;
