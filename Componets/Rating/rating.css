@@ -1,0 +1,20 @@
+.rating-container{
+    background-color: var(--white);
+    padding: 1.6rem;
+    width: 10rem;
+}
+.checked{
+    color: gold;
+}
+.rating-lg span{
+    font-size: 2.4rem;
+}
+
+
+.rating-md span{
+    font-size: 1.6rem;
+}
+
+.rating-sm span{
+    font-size: 1rem;
+}
