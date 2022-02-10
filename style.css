@@ -87,6 +87,23 @@ li {
     justify-content: center;
     align-items: center;
 }
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: center;
+}
+
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .m-auto{
     margin: auto;
 }
