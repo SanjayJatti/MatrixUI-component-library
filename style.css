@@ -103,6 +103,9 @@ li {
     justify-content: center;
     align-items: center;
 }
+.f-wrap{
+    flex-wrap: wrap;
+}
 
 .m-auto{
     margin: auto;
