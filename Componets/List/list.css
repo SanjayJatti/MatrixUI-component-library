@@ -1,0 +1,25 @@
+
+.list-group{
+    width: 40rem;
+    background-color: var(--white);
+}
+.list-item{
+    font-size: 1.6rem;
+    border: 1px solid var(--light-secondary-color);
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+.list-item:hover{
+    background-color: var(--light-primary-color);
+}
+.list-item span{
+    font-size: 1.6rem;
+    margin-left: 1.6rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .list-group{
+        width: 100%;
+    }
+}
