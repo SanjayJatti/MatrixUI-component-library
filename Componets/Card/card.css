@@ -1,9 +1,12 @@
 .card{
     position: relative;
     background-color: white;
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     border: 1px solid var(--light-secondary-color);
     border-radius: 0.5rem;
+}
+.card:hover{
+    box-shadow: 13px 13px 21px -5px rgba(0, 0, 0, 0.3);
 }
 
 .card-vertical{
