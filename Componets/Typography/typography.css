@@ -37,7 +37,7 @@ p{
 }
 
 .text-small{
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 .text-grey{
     color: var(--light-secondary-color);
