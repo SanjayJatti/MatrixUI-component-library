@@ -64,7 +64,12 @@ html{
 body{
     background-color: #f1f1f1;
 }
-
+.primary{
+    color: var(--primary-color);
+}
+.secondary{
+    color: var(--secondary-color);
+}
 
 button{
     cursor: pointer;
