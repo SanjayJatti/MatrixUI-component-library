@@ -37,7 +37,10 @@ p{
 }
 
 .text-small{
-    font-size: 1.3rem;
+    font-size: 1rem;
+}
+.text-medium{
+    font-size: 1.4rem;
 }
 .text-grey{
     color: var(--light-secondary-color);
