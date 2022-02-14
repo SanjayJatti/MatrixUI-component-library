@@ -259,5 +259,5 @@
     gap: var(--gap-xl);
 }
 .gap-xxl {
-      gap: var(--z-index-xxl)
+    gap: var(--z-index-xxl)
 }

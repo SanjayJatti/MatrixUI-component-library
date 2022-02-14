@@ -16,6 +16,7 @@
 @import url("./Componets/Card/card.css");
 @import url("./Componets/Chips/chips.css");
 @import url("./Componets/Drawer/drawer.css");
+@import url("./Componets/Grid/grid.css");
 @import url("./Componets/Image/image.css");
 @import url('./Componets/Input/input.css');
 @import url("./Componets/List/list.css");
@@ -69,6 +70,8 @@ body{
 .carbon-container{
     width: 100%;
     overflow: hidden;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
 .page-wrapper{
