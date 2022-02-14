@@ -51,9 +51,7 @@ body{
 }
 
 @media only screen and (max-width: 680px) {
-    *{
-        font-size: 50%;
-    }
+
     .open-slide{
         display: block;
     }
@@ -80,5 +78,14 @@ body{
     .header-title{
         font-size: 1rem;
     }
+}
+@media only screen and (max-width: 480px){
+    *{
+        font-size: 50%;
+    }
+    .page-wrapper{
+        padding: 1rem 1rem;
+    }
+
 }
 
