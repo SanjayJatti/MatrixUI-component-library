@@ -1,0 +1,70 @@
+:root{
+    --scale-xxs: 0.3rem;
+
+    --scale-xs: 0.5rem;
+
+    --scale-sm: 1rem;
+  
+    --scale-md: 2rem;
+  
+    --scale-lg: 3rem;
+  
+    --scale-xl: 4rem;
+
+    --scale-xxl: 5rem;
+  
+    /* Margin Style Variables */
+
+    --margin-xs: 0.5rem;
+
+    --margin-sm: 1rem;
+  
+    --margin-md: 2rem;
+  
+    --margin-lg: 3rem;
+  
+    --margin-xl: 4rem;
+
+    /* Padding Style Variables */
+  
+    --padding-xs: 0.5rem;
+
+    --padding-sm: 1rem;
+  
+    --padding-md: 2rem;
+  
+    --padding-lg: 3rem;
+  
+    --padding-xl: 4rem;
+
+    /* Gap Style Variables */
+
+    --gap-xs: 0.5rem;
+
+    --gap-sm: 1rem;
+  
+    --gap-md: 2rem;
+  
+    --gap-lg: 3rem;
+  
+    --gap-xl: 4rem;
+
+    --gap-xxl: 5rem; 
+
+    /* Z-index variables */
+
+    --z-index-sm: 1rem;
+  
+    --z-index-md: 2rem;
+  
+    --z-index-lg: 3rem;
+  
+    --z-index-xl: 4rem;
+
+    --z-index-xxl: 5rem; 
+
+   /* Screen Size Breakpoints for root font size 100%  */
+
+    --screen-size-sm: 68rem; /* 680px */
+
+}
