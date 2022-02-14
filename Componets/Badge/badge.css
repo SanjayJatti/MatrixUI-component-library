@@ -20,9 +20,11 @@
     display: inline-block;
     font-weight: 700;
 }
+
 .icon-badge-wrapper span i{
     font-size: 2rem;
 }
+
 .icon-badge,
 .avatar-badge{
     position: absolute;
