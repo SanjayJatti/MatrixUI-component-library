@@ -1,7 +1,4 @@
 .chips-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2rem;
     border: 1px solid var(--light-secondary-color);
     padding: 1rem;
     font-size: 1.6rem;
@@ -17,8 +14,8 @@
     border:1px solid var(--light-secondary-color);
     font-weight:500;
     font-size: inherit;
-    gap: 0.4rem;
-    padding-right: 0.5rem;
+    gap: 0.3rem;
+    padding: 0.5rem;
 }
 
 .chip img{
@@ -29,6 +26,6 @@
     font-size: inherit;
 }
 .chip-btn-close{
-    font-size: inherit;
+    font-size: 3rem;
     cursor: pointer;
 }
