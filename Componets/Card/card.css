@@ -2,7 +2,7 @@
     position: relative;
     background-color: white;
     border: 1px solid var(--light-secondary-color);
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 .card:hover{
     box-shadow: 13px 13px 21px -5px rgba(0, 0, 0, 0.3);

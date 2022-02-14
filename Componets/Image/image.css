@@ -6,11 +6,13 @@
     max-width: 100%;
     object-fit: cover;
     height: auto;
+    border-radius: 0.3rem;
 }
 .img-square{
     object-fit: cover;
     width: 200px;
     height: 200px;
+    border-radius: 0.3rem;
 }
 .img-round{
     object-fit: cover;
