@@ -1,9 +1,4 @@
-
-.alert-container{
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem; 
-}
+/* Alert component CSS */
 .alert{
     display: flex;
     gap: 1rem;
@@ -12,7 +7,6 @@
     padding: 0.5rem 1rem;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    text-align: justify;
 }
 .alert span{
     font-size: inherit;

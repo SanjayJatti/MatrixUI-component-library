@@ -37,26 +37,6 @@ body{
 }
 
 
-.gap-1{
-    gap: 1rem;
-}
-.gap-2{
-    gap: 2rem;
-}
-.gap-3{
-    gap: 3rem;
-}
-.gap-4{
-    gap: 4rem;
-}
-.gap-5{
-    gap:5rem;
-}
-.m-auto{
-    margin: auto;
-}
-
-
 /*Spacing*/
 
 .vertical-gutter-xs{
@@ -89,7 +69,6 @@ body{
 .carbon-container{
     width: 100%;
     overflow: hidden;
-    margin-top: 2rem;
   }
 
 .page-wrapper{
