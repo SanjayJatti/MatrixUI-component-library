@@ -85,7 +85,7 @@ body{
     max-width:72vw;
 }
 
-@media only screen and (max-width: var( --screen-size-sm)) {
+@media only screen and (max-width: 680px) {
     *{
         font-size: 50%;
     }
