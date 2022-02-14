@@ -26,44 +26,9 @@
 @import url("./Componets/Snackbar/snackbar.css");
 @import url("./Componets/Typography/typography.css");
 
-:root {
-    --z-index-5: 5;
-    --z-index-4: 4;
-    --z-index-3: 3;
-    --z-index-2: 2;
-}
 
 body{
     background-color: var(--white);
-}
-
-
-/*Spacing*/
-
-.vertical-gutter-xs{
-    margin-bottom: 0.8rem;
-}
-
-.vertical-gutter-sm{
-    margin-bottom: 1.6rem;
-}
-
-.vertical-gutter-md{
-    margin-bottom: 2.4rem;
-}
-
-.vertical-gutter-lg{
-    margin-bottom: 3.2rem;
-}
-
-.vertical-gutter-xl{
-    margin-bottom: 4.0rem;
-}
-.vertical-gutter-xxl{
-    margin-bottom: 6.4rem;
-}
-.pl-xxs{
-    padding-left: 0.5rem;
 }
 
 /* Documentation site utility classes */
@@ -72,7 +37,7 @@ body{
     overflow: hidden;
     margin-top: 3rem;
     margin-bottom: 3rem;
-  }
+}
 
 .page-wrapper{
     position: relative;
