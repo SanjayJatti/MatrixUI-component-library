@@ -19,7 +19,7 @@
     font-size: 1.6rem;
     display: block;
     transition: 0.3s;
-    color: var(--off-White);
+    color: var(--off-white);
     display: block;
     transition: 0.3s;
     letter-spacing: 0.5px;
@@ -56,10 +56,9 @@
     flex-direction: column;
     justify-content: space-around;
     height: 88vh;
-    /* width: 20vw; */
     border-right: 1px solid var(--light-secondary-color);
     text-align: center;
-    background: white;
+    background: var(--white);
 }
 
 .sidebar-item{

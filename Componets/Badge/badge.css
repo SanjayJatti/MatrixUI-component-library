@@ -1,31 +1,28 @@
-.badge-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-    font-size: 1.2rem;
-}
+/* CSS for Badge coomponent */
 .badge{
-    padding: 0.4rem;
-    font-size: 0.5rem;
-    color: white;
+    padding: 0.5rem;
+    color: var(--off-white);
     font-size: 1.2rem;
-    width: 4rem;
+    max-width: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 800;
 }
+
 .pill-badge{
    border-radius:0.65rem ;
 }
+
 .icon-badge-wrapper,
 .avatar-badge-wrapper{
     position: relative;
     display: inline-block;
     font-weight: 700;
 }
-
+.icon-badge-wrapper span i{
+    font-size: 2rem;
+}
 .icon-badge,
 .avatar-badge{
     position: absolute;
@@ -34,23 +31,8 @@
     border-radius: 50%;
     bottom: 70%;
     left: 70%;
-    color: white;
-    padding: 3px;
-    font-size: 1rem;
-}
-.bg-primary{
-    background-color: var(--primary-color);
-}
-.bg-secondary{
-    background-color: var(--secondary-color);
-}
-.bg-success{
-    background-color: var(--success-color);
-}
-.bg-danger{
-    background-color: var(--danger-color);
-}
-.bg-warning{
-    background-color: var(--warning-color);
+    color:var(--off-white);
+    padding: 0.3rem;
+    font-size: 0.8rem;
 }
 

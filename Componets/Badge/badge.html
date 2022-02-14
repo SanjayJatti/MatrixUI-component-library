@@ -7,17 +7,20 @@
     <title>Documentation|Badge</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
+    <script src="/sidebar.js"></script>
 </head>
 <body>
     <!--------- header---------->
     <header class="header-container">
-        <a href="#" class="nav-link header-title"><h2>Matrix <span>UI</span></h2></a>
-       
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
+        </span>
+        <a href="/index.html" class="nav-link header-title nav-hover"><h2>Matrix <span>UI</span></h2></a> 
         <ul class="nav-list nav-items">
-            <li class="nav-item ">
-                <a class="nav-link " href="#">Home</a> </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Documentation</a></li>
+                <a class="nav-link nav-hover" href="/index.html">Home</a> </li>
+            <li class="nav-item">
+                <a class="nav-link nav-hover active" href="/Componets/Alert/alert.html">Documentation</a></li>
 
         </ul>
         <ul class="nav-list nav-social-media">
@@ -29,79 +32,107 @@
                 <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a></li>
         </ul> 
     </header>
-      <!--------- sidebar---------->
-      <div class="sidebar">
-        <ul class = "sidebar-list">
-            <a href = "" class = "sidebar-item">Avatar</a>
-            <a href = "" class = "sidebar-item">Alert</a>
-            <a href = "" class = "sidebar-item sidebar-active">Badges</a>
-            <a href = "" class = "sidebar-item">Buttons</a>
-            <a href = "" class = "sidebar-item">Cards</a>
-            <a href = "" class = "sidebar-item">Responsive Images</a>
-            <a href = "" class = "sidebar-item">Forms</a>
-            <a href = "" class = "sidebar-item">Modal</a>
-            <a href = "" class = "sidebar-item">Navbar</a>
-            <a href = "" class = "sidebar-item">List</a>
-            <a href = "" class = "sidebar-item">Responsive Grid</a>
-            <a href = "" class = "sidebar-item">Typography</a>
+      <!--------- Drawer or sidmenu for smaller screens---------->
+      <div id="side-nav" class="side-menu">
+        <ul class = "side-menu-list">
+            <a href="#" class="sidemenu-close-btn" onclick="closeSlideMenu()">&times;</a>
+            <a href = "/Componets/Alert/alert.html">Alert</a>
+            <a href = "/Componets/Avatar/avatar.html" >Avatar</a>
+            <a href = "/Componets/Badge/badge.html" class="side-menu-active">Badges</a>
+            <a href = "/Componets/Button/button.html" >Buttons</a>
+            <a href = "/Componets/Card/card.html" >Cards</a>
+            <a href = "/Componets/Chips/chips.html" >Chips</a>
+            <a href = "/Componets/Drawer/drawer.html" >Drawer</a>
+            <a href = "/Componets/Grid/grid.html" >Grid</a>
+            <a href = "/Componets/Image/image.html" >Images</a>
+            <a href = "/Componets/Input/input.html" >Forms</a>
+            <a href = "/Componets/List/list.html" >List</a>
+            <a href = "/Componets/Modal/modal.html" >Modal</a>
+            <a href = "/Componets/Navbar/navbar.html" >Navbar</a>
+            <a href = "/Componets/Rating/rating.html" >Rating</a>
+            <a href = "/Componets/Snackbar/snackbar.html" >Snackbar</a>
+            <a href = "/Componets/Typography/typography.html" >Typography</a>
         </ul>
     </div>
-      <!--------- Badges---------->
+      <!------ Sidebar for larger screens ------>
+      <div class="sidebar">
+        <ul class = "sidebar-list">
+            <a href = "/Componets/Alert/alert.htm" class ="sidebar-item">Alert</a>
+            <a href = "/Componets/Avatar/avatar.html" class ="sidebar-item">Avatar</a>
+            <a href = "/Componets/Badge/badge.html" class ="sidebar-item sidebar-active">Badges</a>
+            <a href = "/Componets/Button/button.html" class ="sidebar-item">Buttons</a>
+            <a href = "/Componets/Card/card.html" class ="sidebar-item">Cards</a>
+            <a href = "/Componets/Drawer/drawer.html" class ="sidebar-item">Chips</a>
+            <a href = "/Componets/Drawer/drawer.html" class ="sidebar-item ">Drawer</a>
+            <a href = "/Componets/Grid/grid.html" class ="sidebar-item">Grid</a>
+            <a href = "/Componets/Image/image.html" class ="sidebar-item">Images</a>
+            <a href = "/Componets/Input/input.html" class ="sidebar-item">Forms</a>
+            <a href = "/Componets/List/list.html" class ="sidebar-item ">List</a>
+            <a href = "/Componets/Modal/modal.html" class ="sidebar-item">Modal</a>
+            <a href = "/Componets/Navbar/navbar.html" class ="sidebar-item">Navbar</a>
+            <a href = "/Componets/Rating/rating.html" class ="sidebar-item">Rating</a>
+            <a href = "/Componets/Snackbar/snackbar.html" class ="sidebar-item ">Snackbar</a>
+            <a href = "/Componets/Typography/typography.html" class ="sidebar-item">Typography</a>
+        </ul>
+    </div>
+        <!--------- Badges---------->
     <div class="page-wrapper">
         <h2>Badge</h2>
-        <p class="vertical-gutter-md">Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge can be used to display numbers, online / offline status, depending on where they are used. <br/>Copy the styles of different badges and use it in your code</p>
-        
-        <h4 class="vertical-gutter-md">Simple Badges</h4>
-        <div class="badge-container vertical-gutter-md">
+        <p class="margin-b-lg">Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge can be used to display numbers, online / offline status, depending on where they are used. <br/>Copy the styles of different badges and use it in your code</p>
+        <!------- Simple Badges ------->
+        <h4 class="margin-b-lg">Simple Badges</h4>
+        <div class="flex-center gap-md flex-wrap">
             <div class="badge bg-primary">Primary</div>
             <div class="badge bg-secondary">Secondary</div>
             <div class="badge bg-success">Success</div>
             <div class="badge bg-danger">Danger</div>
             <div class="badge bg-warning">Warning</div>
         </div>
-        <div class="carbon-container flex-center vertical-gutter-md">
+        <div class="carbon-container flex-center">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=754&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=159%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-primary%2522%253EPrimary%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-secondary%2522%253ESecondary%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-success%2522%253ESuccess%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-danger%2522%253EDanger%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-warning%2522%253EWarning%253C%252Fdiv%253E"
-              style="width: 754px; height: 203px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-          </iframe>
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-primary%2522%253EPrimary%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-secondary%2522%253ESecondary%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-success%2522%253ESuccess%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-danger%2522%253EDanger%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520bg-warning%2522%253EWarning%253C%252Fdiv%253E"
+            style="width: 493px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>     
         </div>
-
-        <h4 class="vertical-gutter-md">Pill Badges</h4>
-        <div class="badge-container vertical-gutter-md">
+        <!------- Pill Badges ------->       
+        <h4 class="margin-b-lg">Pill Badges</h4>
+        <div class="flex-center gap-md flex-wrap">
             <div class="badge pill-badge bg-primary">Primary</div>
             <div class="badge pill-badge bg-secondary">Secondary</div>
             <div class="badge pill-badge  bg-success">Success</div>
             <div class="badge pill-badge bg-danger">Danger</div>
             <div class="badge pill-badge bg-warning">Warning</div>
         </div>
-        <div class="carbon-container flex-center vertical-gutter-md">
+        <div class="carbon-container flex-center">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=754&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=159%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520bg-primary%2522%253EPrimary%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520bg-secondary%2522%253ESecondary%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520%2520bg-success%2522%253ESuccess%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520bg-danger%2522%253EDanger%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520bg-warning%2522%253EWarning%253C%252Fdiv%253E"
-              style="width: 754px; height: 203px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520bg-primary%2522%253EPrimary%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520bg-secondary%2522%253ESecondary%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520%2520bg-success%2522%253ESuccess%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520bg-danger%2522%253EDanger%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520pill-badge%2520bg-warning%2522%253EWarning%253C%252Fdiv%253E"
+            style="width: 628px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>          
         </div>
-        <h4 class="vertical-gutter-md">Badge on icons</h4>
-        <div class="badge-container vertical-gutter-md">
+         <!------- Badge on icon ------->
+        <h4 class="margin-b-lg">Badge on icons</h4>
+        <div class="flex-center gap-md flex-wrap">
             <div class="icon-badge-wrapper">
-                <span><i class="fas fa-envelope fa-5x"></i></span>
+                <span><i class="fas fa-envelope"></i></span>
                 <span class="icon-badge bg-danger">5+</span>
             </div>
             <div class="icon-badge-wrapper">
-                <span><i class="far fa-heart fa-5x"></i></span>
+                <span><i class="far fa-heart"></i></span>
                 <span class="icon-badge bg-danger">5+</span>
             </div>
         </div>
-        <div class="carbon-container flex-center vertical-gutter-md">
+        <div class="carbon-container flex-center">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=754&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=159%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-envelope%2520fa-5x%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2520bg-danger%2522%253E5%252B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2520fa-5x%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2520bg-danger%2522%253E5%252B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              style="width: 754px; height: 260px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-          </iframe>
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2520bg-danger%2522%253E5%252B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2520bg-danger%2522%253E5%252B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="width: 544px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>          
         </div>
-        <h4 class="vertical-gutter-md">Badge on avatar</h4>
-        <div class="badge-container vertical-gutter-md">
+        <!-------- badge on avatar -------->
+        <h4 class="margin-b-lg">Badge on avatar</h4>
+        <div class="flex-center gap-md flex-wrap">
             <div class="avatar-badge-wrapper">
                 <img class="avatar avatar-md" src="/Assets/avatar1.jpg" alt="avatar">
                 <span class="avatar-badge bg-success"></span>
@@ -111,12 +142,12 @@
                 <span class="avatar-badge bg-danger"></span>
             </div>
         </div>
-        <div class="carbon-container flex-center vertical-gutter-md">
+        <div class="carbon-container flex-center">
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=754&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=159%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520bg-success%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520bg-danger%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              style="width: 849px; height: 277px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-          </iframe>
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520bg-success%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-badge%2520bg-danger%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="width: 686px; height: 260px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>          
         </div>    
     </div>
      
