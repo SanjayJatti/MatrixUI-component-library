@@ -5,9 +5,9 @@
     align-items: center;
     justify-content: center;
     border: none;
-    border-radius: 3px;
+    border-radius: var(--scale-xxs);
     padding: 0.8rem;
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
     cursor: pointer;
 }
 /*Solid Buttons*/
@@ -109,12 +109,11 @@
 
 /*Different sized buttons*/
 .btn-large{
-    padding: 1rem 2rem;
-    font-size: 2.2rem;
-
+    padding: var(--scale-md);
+    font-size: var(--scale-lg);
 }
 .btn-small{
-    font-size: 1rem;
+    font-size: var(--scale-sm);
 }
 
 /* Disabled buttons */
@@ -135,7 +134,7 @@
 }
 /* Floating ation button */
 .btn-floating-action{
-    font-size: 2.4rem;
+    font-size: var(--scale-xl);
     background-color:var(--primary-color);
     color: var(--off-white);
     width: 3rem;
@@ -143,8 +142,8 @@
     border-radius: 50%;
     z-index: var(--z-index-xxl);
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: var(--scale-sm);
+    right: var(--scale-sm);
 }
 .btn-floating-action:hover{
     background-color: var(--dark-primary-color) ;
