@@ -59,7 +59,7 @@
 
 }
 .drawer-item i{
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
 } 
 
 /* for documentation site */

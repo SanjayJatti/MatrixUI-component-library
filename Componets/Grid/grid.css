@@ -7,10 +7,10 @@
 }
 
 .grid-box{
-    color: var(--off-White);
-    font-size: 1.6rem;
+    color: var(--off-white);
+    font-size: var(--default-font-size);
     min-height: 8rem;
-    padding: 1rem;
+    padding: var(--scale-sm);
 }
 
 .grid-col-4{
