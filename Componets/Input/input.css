@@ -1,33 +1,32 @@
 
 .form-container{
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
-    background-color: white;
-    padding: 3rem;
-    border-radius: 0.5rem;
+    gap: var(--scale-sm);
+    background-color: var(--white);
+    padding: var(--scale-xl);
+    border-radius: var(--scale-xs);
     box-shadow: var(--shadow);
 }
 
 .input-container{
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    font-size: 1.6rem;
+    gap: var(--scale-xxs);
+    font-size: var(--default-font-size);
 }
+
 input,
 textarea{
-    padding: 0.5rem;
-    border-radius: 0.3rem;
+    padding: var(--scale-xs);
+    border-radius: var(--scale-xxs);
     border: 1px solid var(--light-secondary-color);
     width: 100%;
-    font-size: 1.6rem;
-
+    font-size: var(--default-font-size);
 }
 label{
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
 }
 
 input:focus,
@@ -55,18 +54,26 @@ input[type='email']:valid {
     border-color: var(--success-color);
 }
 .validity-msg{
-    font-size: 1rem;
+    font-size: var(--scale-sm);
 }
 
 input[type='checkbox'],
 input[type='radio'] {
 	cursor: pointer;
-	height: 1rem;
-	width: 1rem;
+	height: var(--scale-sm);
+	width: var(--scale-sm);
 }
 .input-checkbox{
     display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 0.5rem;
+	gap: var(--scale-xs);
+}
+
+.form-title{
+    align-self: center;
+}
+.forget-password{
+  gap: var(--scale-sm);
+  align-items: center;
 }
