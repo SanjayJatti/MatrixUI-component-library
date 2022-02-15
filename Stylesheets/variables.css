@@ -65,6 +65,8 @@
 
     --z-index-xxl: 5; 
 
+    /* font size */
+     --default-font-size: 1.6rem;
    /* Screen Size Breakpoints for root font size 100%  */
 
     --screen-size-md: 680px; 
