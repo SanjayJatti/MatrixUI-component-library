@@ -1,18 +1,17 @@
 .image-container{
     max-width: 40vw;
-    margin: 2.4rem auto;
 }
 .img-responsive{
     max-width: 100%;
     object-fit: cover;
     height: auto;
-    border-radius: 0.3rem;
+    border-radius: var(--scale-xxs);
 }
 .img-square{
     object-fit: cover;
     width: 200px;
     height: 200px;
-    border-radius: 0.3rem;
+    border-radius: var(--scale-xxs);
 }
 .img-round{
     object-fit: cover;
