@@ -1,11 +1,11 @@
 /* Alert component CSS */
 .alert{
     display: flex;
-    gap: 1rem;
+    gap: var(--scale-sm);
     align-items: center;
     max-width: 100%;
-    padding: 0.5rem 1rem;
-    font-size: 1.6rem;
+    padding: var(--scale-xs) var(--scale-sm);
+    font-size: var(--default-font-size);
     line-height: 2.4rem;
 }
 .alert span{
