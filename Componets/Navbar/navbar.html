@@ -4,85 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation| Navbar</title>
+    <title>Documentation|Navbar</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
 </head>
 <body>
-    <!--------- header---------->
-    <header class="header-container">
-        <a href="#" class="nav-link header-title nav-hover"><h2>Matrix <span>UI</span></h2></a>
-       
-        <ul class="nav-list nav-items">
-            <li class="nav-item ">
-                <a class="nav-link nav-hover" href="#">Home</a> </li>
-            <li class="nav-item">
-                <a class="nav-link nav-hover active" href="#">Documentation</a></li>
-
-        </ul>
-        <ul class="nav-list nav-social-media">
-            <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/__sanjay13"><i class="fab fa-twitter"></i></a> </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/SanjayJatti"><i class="fab fa-github"></i></a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a></li>
-        </ul> 
-    </header>
-      <!--------- sidebar---------->
-    <div class="sidebar">
-        <ul class = "sidebar-list">
-            <a href = "" class = "sidebar-item">Avatar</a>
-            <a href = "" class = "sidebar-item">Alert</a>
-            <a href = "" class = "sidebar-item">Badges</a>
-            <a href = "" class = "sidebar-item">Buttons</a>
-            <a href = "" class = "sidebar-item">Cards</a>
-            <a href = "" class = "sidebar-item ">Chips</a>
-            <a href = "" class = "sidebar-item ">Responsive Images</a>
-            <a href = "" class = "sidebar-item">Forms</a>
-            <a href = "" class = "sidebar-item">Modal</a>
-            <a href = "" class = "sidebar-item sidebar-active">Navbar</a>
-            <a href = "" class = "sidebar-item">List</a>
-            <a href = "" class = "sidebar-item">Responsive Grid</a>
-            <a href = "" class = "sidebar-item">Typography</a>
-        </ul>
-    </div>
+             <!--------- header---------->
+             <header class="header-container">
+                <span class="open-slide">
+                    <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
+                </span>
+                <a href="/index.html" class="nav-link header-title nav-hover" target="_blank"><h2>Matrix <span>UI</span></h2></a> 
+                <ul class="nav-list nav-items">
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="/index.html" target="_blank">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover active" href="/Componets/Alert/alert.html">Documentation</a>
+                    </li>
+            
+                </ul>
+                <ul class="nav-list nav-social-media">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://twitter.com/__sanjay13" target="_blank"><i class="fab fa-twitter"></i></a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/SanjayJatti" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul> 
+            </header>
+              <!--------- Drawer or sidmenu for smaller screens---------->
+              <div id="side-nav" class="side-menu">
+                <ul class = "side-menu-list">
+                    <a href="#" class="sidemenu-close-btn" onclick="closeSlideMenu()">&times;</a>
+                    <a href = "/Componets/Alert/alert.html" target="_blank">Alert</a>
+                    <a href = "/Componets/Avatar/avatar.html" target="_blank">Avatar</a>
+                    <a href = "/Componets/Badge/badge.html" target="_blank">Badges</a>
+                    <a href = "/Componets/Button/button.html" target="_blank">Buttons</a>
+                    <a href = "/Componets/Card/card.html" target="_blank">Cards</a>
+                    <a href = "/Componets/Chips/chips.html" target="_blank">Chips</a>
+                    <a href = "/Componets/Drawer/drawer.html" target="_blank">Drawer</a>
+                    <a href = "/Componets/Grid/grid.html" target="_blank">Grid</a>
+                    <a href = "/Componets/Image/image.html" target="_blank">Images</a>
+                    <a href = "/Componets/Input/input.html" target="_blank">Forms</a>
+                    <a href = "/Componets/List/list.html" target="_blank" >List</a>
+                    <a href = "/Componets/Modal/modal.html" target="_blank" >Modal</a>
+                    <a href = "/Componets/Navbar/navbar.html" target="_blank"  class="side-menu-active">Navbar</a>
+                    <a href = "/Componets/Rating/rating.html" target="_blank" >Rating</a>
+                    <a href = "/Componets/Snackbar/snackbar.html" target="_blank" >Snackbar</a>
+                    <a href = "/Componets/Typography/typography.html" target="_blank">Typography</a>
+                </ul>
+            </div>
+              <!------ Sidebar for larger screens ------>
+              <div class="sidebar">
+                <ul class = "sidebar-list">
+                    <a href = "/Componets/Alert/alert.htm" target="_blank" class ="sidebar-item">Alert</a>
+                    <a href = "/Componets/Avatar/avatar.html" target="_blank" class ="sidebar-item">Avatar</a>
+                    <a href = "/Componets/Badge/badge.html" target="_blank" class ="sidebar-item">Badges</a>
+                    <a href = "/Componets/Button/button.html" class ="sidebar-item">Buttons</a>
+                    <a href = "/Componets/Card/card.html" target="_blank"class ="sidebar-item">Cards</a>
+                    <a href = "/Componets/Drawer/drawer.html" target="_blank" class ="sidebar-item">Chips</a>
+                    <a href = "/Componets/Drawer/drawer.html" target="_blank" class ="sidebar-item">Drawer</a>
+                    <a href = "/Componets/Grid/grid.html" target="_blank" class ="sidebar-item">Grid</a>
+                    <a href = "/Componets/Image/image.html" target="_blank" class ="sidebar-item">Images</a>
+                    <a href = "/Componets/Input/input.html" target="_blank" class ="sidebar-item ">Forms</a>
+                    <a href = "/Componets/List/list.html" target="_blank" class ="sidebar-item ">List</a>
+                    <a href = "/Componets/Modal/modal.html" target="_blank" class ="sidebar-item">Modal</a>
+                    <a href = "/Componets/Navbar/navbar.html" target="_blank" class ="sidebar-item sidebar-active">Navbar</a>
+                    <a href = "/Componets/Rating/rating.html" target="_blank" class ="sidebar-item">Rating</a>
+                    <a href = "/Componets/Snackbar/snackbar.html" target="_blank" class ="sidebar-item ">Snackbar</a>
+                    <a href = "/Componets/Typography/typography.html" target="_blank" class ="sidebar-item">Typography</a>
+                </ul>
+            </div>
       <!--------- Navbar---------->
     <div class="page-wrapper">
         <h2>Navbar</h2>
-        <p class="vertical-gutter-md">A navigation bar is a navigation header that is generally placed at the top of the page. Copy the styles of navbar and use it in your code</p>
-        <div class="navbar-container vertical-gutter-lg">
-            <a href="#" class="nav-link header-title nav-hover"><h2>Brand</h2></a>
-           
+        <p class="margin-b-lg">A navigation bar is a navigation header that is generally placed at the top of the page. Copy the styles of navbar and use it in your code</p>
+        <div class="navbar-container">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
+            </span>
+            <a class="nav-link header-title nav-hover" href="#" target="_blank"><h2>Brand</h2></a>  
             <ul class="nav-list nav-items">
                 <li class="nav-item">
-                    <a class="nav-link nav-hover" href="#">Products</a>
+                    <a class="nav-link nav-hover" href="#" target="_blank">Products</a>
                 </li>  
             </ul>
-            <div class="search-box-container m-auto">
+            <div class="search-box-container margin-auto">
                 <div class="search-box flex-center">
                     <input class="search-txt" type="search" name="search" placeholder="Type to search">
-                    <a class="search-btn flex-center" href="#"><i class="fas fa-search"></i></a>
+                    <a class="search-btn flex-center" href="#" ><i class="fas fa-search"></i></a>
                 </div>
             </div>
-      
             <ul class="nav-list nav-social-media">
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <img class="avatar avatar-xsm circular-border" src="/Assets/avatar1.jpg" alt="avatar">
-                    </a></li>
+                        <img class="avatar avatar-xs circular-border" src="/Assets/avatar1.jpg" alt="avatar">
+                    </a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-heart"></i></a></li>
+                    <a class="nav-link" href="#" target="_blank"><i class="fas fa-heart"></i></a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <a class="nav-link" href="#" target="_blank"><i class="fas fa-shopping-cart"></i></a></li>
             </ul> 
         </div>
-        <div class="carbaon-container flex-center vertical-gutter-lg">
-            <iframe class="responsive-iframe"
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=785.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=116%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navbar-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-link%2520header-title%2520nav-hover%2522%253E%253Ch2%253EBrand%253C%252Fh2%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-list%2520nav-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2520nav-hover%2522%2520href%253D%2522%2523%2522%253EProducts%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav%2520list%2520nav-items%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522search-box%2520flex-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522search-txt%2522%2520type%253D%2522search%2522%2520name%253D%2522search%2522%2520placeholder%253D%2522Type%2520to%2520search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522search-btn%2520flex-center%2522%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-list%2520nav-social-media%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2522%2520href%253D%2522%2523%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-xsm%2520circular-border%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2522%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-link%2522%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-              style="width: 974px; height: 486px; border:0; transform: scale(1); overflow:hidden;"
-              sandbox="allow-scripts allow-same-origin">
-            </iframe>
+        <div class="code-snippet">
+            <iframe src="https://www.thiscodeworks.com/embed/620bec9b80e1cd0015bd9442" style="width: 100%; height: 476px;" frameborder="0"></iframe>
         </div>
        
     </div>
