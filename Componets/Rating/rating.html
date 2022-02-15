@@ -7,81 +7,87 @@
     <title>Documentation|Rating</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
-    <script src="/sidebar.js"></script>
+    <script src="/index.js"></script>
  
 </head>
 <body>
-    <!--------- header---------->
-    <header class="header-container">
-        <span class="open-slide">
-            <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
-        </span>
+     <!--------- header---------->
+     <header class="header-container">
+      <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
+      </span>
+      <a href="/index.html" class="nav-link header-title nav-hover" target="_blank"><h2>Matrix <span>UI</span></h2></a> 
+      <ul class="nav-list nav-items">
+          <li class="nav-item">
+              <a class="nav-link nav-hover" href="/index.html" target="_blank">Home</a> 
+          </li>
+          <li class="nav-item">
+              <a class="nav-link nav-hover active" href="/Componets/Alert/alert.html">Documentation</a>
+          </li>
+      </ul>
+      <ul class="nav-list nav-social-media">
+          <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/__sanjay13" target="_blank"><i class="fab fa-twitter"></i></a> 
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://github.com/SanjayJatti" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+      </ul> 
+  </header>
+  <!--------- Drawer or sidmenu for smaller screens---------->
+  <div id="side-nav" class="side-menu">
+      <ul class = "side-menu-list">
+          <a href="#" class="sidemenu-close-btn" onclick="closeSlideMenu()">&times;</a>
+          <a href = "/Componets/Alert/alert.html" target="_blank">Alert</a>
+          <a href = "/Componets/Avatar/avatar.html" target="_blank">Avatar</a>
+          <a href = "/Componets/Badge/badge.html" target="_blank">Badges</a>
+          <a href = "/Componets/Button/button.html" target="_blank">Buttons</a>
+          <a href = "/Componets/Card/card.html" target="_blank">Cards</a>
+          <a href = "/Componets/Chips/chips.html" target="_blank">Chips</a>
+          <a href = "/Componets/Drawer/drawer.html" target="_blank">Drawer</a>
+          <a href = "/Componets/Grid/grid.html" target="_blank">Grid</a>
+          <a href = "/Componets/Image/image.html" target="_blank">Images</a>
+          <a href = "/Componets/Input/input.html" target="_blank">Forms</a>
+          <a href = "/Componets/List/list.html" target="_blank" >List</a>
+          <a href = "/Componets/Modal/modal.html" target="_blank" >Modal</a>
+          <a href = "/Componets/Navbar/navbar.html" target="_blank">Navbar</a>
+          <a href = "/Componets/Rating/rating.html" target="_blank" class="side-menu-active">Rating</a>
+          <a href = "/Componets/Snackbar/snackbar.html" target="_blank" >Snackbar</a>
+          <a href = "/Componets/Typography/typography.html" target="_blank">Typography</a>
+      </ul>
+  </div>
+  <!------ Sidebar for larger screens ------>
+  <div class="sidebar">
+      <ul class = "sidebar-list">
+          <a href = "/Componets/Alert/alert.htm" target="_blank" class ="sidebar-item">Alert</a>
+          <a href = "/Componets/Avatar/avatar.html" target="_blank" class ="sidebar-item">Avatar</a>
+          <a href = "/Componets/Badge/badge.html" target="_blank" class ="sidebar-item">Badges</a>
+          <a href = "/Componets/Button/button.html" class ="sidebar-item">Buttons</a>
+          <a href = "/Componets/Card/card.html" target="_blank"class ="sidebar-item">Cards</a>
+          <a href = "/Componets/Drawer/drawer.html" target="_blank" class ="sidebar-item">Chips</a>
+          <a href = "/Componets/Drawer/drawer.html" target="_blank" class ="sidebar-item">Drawer</a>
+          <a href = "/Componets/Grid/grid.html" target="_blank" class ="sidebar-item">Grid</a>
+          <a href = "/Componets/Image/image.html" target="_blank" class ="sidebar-item">Images</a>
+          <a href = "/Componets/Input/input.html" target="_blank" class ="sidebar-item ">Forms</a>
+          <a href = "/Componets/List/list.html" target="_blank" class ="sidebar-item ">List</a>
+          <a href = "/Componets/Modal/modal.html" target="_blank" class ="sidebar-item">Modal</a>
+          <a href = "/Componets/Navbar/navbar.html" target="_blank" class ="sidebar-item">Navbar</a>
+          <a href = "/Componets/Rating/rating.html" target="_blank" class ="sidebar-item sidebar-active">Rating</a>
+          <a href = "/Componets/Snackbar/snackbar.html" target="_blank" class ="sidebar-item ">Snackbar</a>
+          <a href = "/Componets/Typography/typography.html" target="_blank" class ="sidebar-item">Typography</a>
+      </ul>
+  </div>  
 
-        <a href="#" class="nav-link header-title"><h2>Matrix <span>UI</span></h2></a>
-       
-        <ul class="nav-list nav-items">
-            <li class="nav-item ">
-                <a class="nav-link " href="#">Home</a> </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Documentation</a></li>
-
-        </ul>
-        <ul class="nav-list nav-social-media">
-            <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/__sanjay13"><i class="fab fa-twitter"></i></a> </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/SanjayJatti"><i class="fab fa-github"></i></a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a></li>
-        </ul> 
-    </header>
-      <!--------- sidebar---------->
-      <div id="side-nav" class="side-menu">
-        <ul class = "side-menu-list">
-            <a href="#" class="sidemenu-close-btn" onclick="closeSlideMenu()">&times;</a>
-            <a href = "">Avatar</a>
-            <a href = "">Alert</a>
-            <a href = "">Badges</a>
-            <a href = "">Buttons</a>
-            <a href = "">Cards</a>
-            <a href = "">Drawer</a>
-            <a href = "">Responsive Images</a>
-            <a href = "">Forms</a>
-            <a href = "">Modal</a>
-            <a href = "">Navbar</a>
-            <a href = "">List</a>
-            <a href = "">Responsive Grid</a>
-            <a href = "">Rating</a>
-            <a href = "">Snackbar</a>
-            <a href = "">Typography</a>
-        </ul>
-    </div>
-
-      <div class="sidebar">
-        <ul class = "sidebar-list">
-            <a href = "" class = "sidebar-item">Avatar</a>
-            <a href = "" class = "sidebar-item ">Alert</a>
-            <a href = "" class = "sidebar-item">Badges</a>
-            <a href = "" class = "sidebar-item">Buttons</a>
-            <a href = "" class = "sidebar-item">Cards</a>
-            <a href = "" class = "sidebar-item ">Drawer</a>
-            <a href = "" class = "sidebar-item">Responsive Images</a>
-            <a href = "" class = "sidebar-item">Forms</a>
-            <a href = "" class = "sidebar-item">Modal</a>
-            <a href = "" class = "sidebar-item">Navbar</a>
-            <a href = "" class = "sidebar-item ">List</a>
-            <a href = "" class = "sidebar-item">Responsive Grid</a>
-            <a href = "" class = "sidebar-item sidebar-active">Rating</a>
-            <a href = "" class = "sidebar-item ">Snackbar</a>
-            <a href = "" class = "sidebar-item">Typography</a>
-        </ul>
-    </div>
-      <!--------- List---------->
+      <!--------- Rating---------->
       <div class="page-wrapper">
           <h2>Rating</h2>
-          <p class="vertical-gutter-md">Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.</p>
+          <p class="margin-b-lg">Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.</p>
+          <!-------- Large size rating ------->
           <h4>Large Size Rating</h4>
-          <div class="rating-container flex-center m-auto vertical-gutter-md">
+          <div class="rating-container margin-b-lg margin-auto">
             <div class="rating rating-lg">
                 <span><i class="fas fa-star checked"></i></span>
                 <span><i class="fas fa-star checked"></i></span>
@@ -90,16 +96,12 @@
                 <span><i class="fas fa-star"></i></span>
             </div>
           </div>
-          <div class="carbon-container flex-center vertical-gutter-lg">
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520rating-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-            style="width: 577px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>
-          
+          <div class="code-snippet">
+            <iframe src="https://www.thiscodeworks.com/embed/620bf28f80e1cd0015bd9443" style="width: 100%; height: 177px;" frameborder="0"></iframe> 
           </div>
-          <h4 class="vertical-gutter-md">Medium Size Rating</h4>
-          <div class="rating-container flex-center m-auto vertical-gutter-md">
+          <!------ Medium Size Rating ------->
+          <h4 class="margin-b-lg">Medium Size Rating</h4>
+          <div class="rating-container margin-b-lg margin-auto">
             <div class="rating rating-md">
                 <span><i class="fas fa-star checked"></i></span>
                 <span><i class="fas fa-star checked"></i></span>
@@ -108,15 +110,12 @@
                 <span><i class="fas fa-star"></i></span>
             </div>
           </div>
-          <div class="carbon-container flex-center vertical-gutter-lg">
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520rating-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-            style="width: 577px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>                 
-        </div>
-          <h4 class="vertical-gutter-md">Small Size Rating</h4>
-          <div class="rating-container flex-center m-auto vertical-gutter-md">
+          <div class="code-snippet">
+            <iframe src="https://www.thiscodeworks.com/embed/620bf2d580e1cd0015bd9444" style="width: 100%; height: 177px;" frameborder="0"></iframe>              
+          </div>
+        <!-------- Small Size Rating ------>
+          <h4 class="margin-b-lg">Small Size Rating</h4>
+          <div class="rating-container margin-auto margin-b-lg">
             <div class="rating rating-sm">
                 <span><i class="fas fa-star checked"></i></span>
                 <span><i class="fas fa-star checked"></i></span>
@@ -125,14 +124,9 @@
                 <span><i class="fas fa-star"></i></span>
             </div>
           </div>
-          <div class="carbon-container flex-center vertical-gutter-lg">       
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=javascript&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520rating-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2520checked%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-            style="width: 577px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>          
+          <div class="code-snippet">       
+            <iframe src="https://www.thiscodeworks.com/embed/620bf37780e1cd0015bd9445" style="width: 100%; height: 177px;" frameborder="0"></iframe>       
           </div>
-          
       </div>
 </body>
 </html>

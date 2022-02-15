@@ -2,19 +2,22 @@
     background-color: var(--white);
     padding: 1.6rem;
     width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .checked{
-    color: gold;
+    color: var(--warning-color);
 }
 .rating-lg span{
-    font-size: 2.4rem;
+    font-size: var(--scale-lg);
 }
 
 
 .rating-md span{
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
 }
 
 .rating-sm span{
-    font-size: 1rem;
+    font-size: var(--scale-sm);
 }
