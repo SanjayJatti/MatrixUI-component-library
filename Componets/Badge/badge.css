@@ -1,13 +1,13 @@
 /* CSS for Badge coomponent */
 .badge{
-    padding: 0.5rem;
+    padding: var(--scale-xs);
     color: var(--off-white);
-    font-size: 1.2rem;
+    font-size: var(--scale-sm);
     max-width: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .pill-badge{
@@ -22,19 +22,19 @@
 }
 
 .icon-badge-wrapper span i{
-    font-size: 2rem;
+    font-size: var(--scale-lg);
 }
 
 .icon-badge,
 .avatar-badge{
     position: absolute;
-    min-width: 10px;
-    min-height: 10px;
+    min-width: var(--scale-sm);
+    min-height: var(--scale-sm);
     border-radius: 50%;
     bottom: 70%;
     left: 70%;
     color:var(--off-white);
-    padding: 0.3rem;
-    font-size: 0.8rem;
+    padding: var(--scale-xxs);
+    font-size: var(--scale-sm);
 }
 
