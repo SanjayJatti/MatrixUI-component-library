@@ -5,13 +5,15 @@
 
     --scale-sm: 1rem;
   
-    --scale-md: 2rem;
+    --scale-md: 1.5rem;
   
-    --scale-lg: 3rem;
+    --scale-lg: 2rem;
   
-    --scale-xl: 4rem;
+    --scale-xl: 3rem;
 
-    --scale-xxl: 5rem;
+    --scale-xxl: 4rem;
+
+    --scale-xxxl: 6rem;
   
     /* Margin Style Variables */
 
@@ -45,11 +47,11 @@
   
     --gap-md: 2rem;
   
-    --gap-lg: 2.5rem;
+    --gap-lg: 3rem;
   
-    --gap-xl: 3rem;
+    --gap-xl: 4rem;
 
-    --gap-xxl: 4rem; 
+    --gap-xxl: 5rem; 
 
     /* Z-index variables */
 

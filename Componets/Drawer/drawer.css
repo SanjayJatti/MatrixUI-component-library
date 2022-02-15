@@ -1,64 +1,61 @@
+
 .drawer-container{
     position: relative;
     height: 25rem;
 }
 .drawer-header{
-    height: 3rem;
+    height: scale(--scale-xl);
     background-color: var(--primary-color);
-    padding: 1.5rem;
+    padding: var(--scale-md);
     display: flex;
     align-items: center;
 }
 .open-drawer i{
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: var(--scale-md);
 }
-
 .drawer-menu{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: var(--z-index-5);
+    z-index: var(--z-index-xl);
     top: 0;
     left: 0;
     opacity: 0.9;
     background-color: var(--secondary-color);
     overflow: hidden;
-    padding-top: 6rem;
+    padding-top: var(--scale-xxxl);
     transition: 0.5s;
 }
 .drawer-menu a{
     padding: 1rem 1rem 1rem 3rem;
     text-decoration: none;
-    font-size: 1.6rem;
-    color:var(--secondary-color);
     display: block;
     transition: 0.3s;
-    color: var(--grayishWhite);
-    display: block;
+    color: var(--off-white);
     transition: 0.3s;
 }
 .drawer-menu a:hover{
     color: var(--white);
+    font-weight: bold;
 }
 .drawer-menu .drawer-close-btn{
     position: absolute;
     top:0;
     right: 2.2rem;
     font-size: 3.6rem;
-    margin-left: 5rem;
+    margin-left: var(--scale-xxl);
 }
 .drawer-item{
-    margin-bottom: 1.5rem;
-    font-weight: bold;
+    margin-bottom: var(--scale-md);
     letter-spacing: 0.4px;
-    padding: 0.7rem;
+    padding: var(--scale-xs);
     cursor: pointer;
 }
 
 .drawer-item span{
     font-size: 1.6rem;
-    margin-left: 2.4rem;
+    margin-left: var(--scale-lg);
 
 }
 .drawer-item i{

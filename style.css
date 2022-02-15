@@ -32,7 +32,7 @@ body{
 }
 
 /* Documentation site utility classes */
-.carbon-container{
+.code-snippet{
     width: 100%;
     overflow: hidden;
     margin-top: 3rem;
