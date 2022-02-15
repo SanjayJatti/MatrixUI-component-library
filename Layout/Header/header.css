@@ -35,6 +35,7 @@
 .header-title span{
     color: var(--secondary-color);
     font-size: 2.5rem;
+    line-height: 3.3rem;
 }
 
 .nav-list{
