@@ -7,96 +7,100 @@
     <title>Documentation|List</title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
-    <script src="/sidebar.js"></script>
+    <script src="/index.js"></script>
  
 </head>
 <body>
-    <!--------- header---------->
-    <header class="header-container">
+     <!--------- header---------->
+     <header class="header-container">
         <span class="open-slide">
             <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-10x"></i></a>
         </span>
-
-        <a href="#" class="nav-link header-title"><h2>Matrix <span>UI</span></h2></a>
-       
+        <a href="/index.html" class="nav-link header-title nav-hover"><h2>Matrix <span>UI</span></h2></a> 
         <ul class="nav-list nav-items">
-            <li class="nav-item ">
-                <a class="nav-link " href="#">Home</a> </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Documentation</a></li>
-
+                <a class="nav-link nav-hover" href="/index.html">Home</a> 
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-hover active" href="/Componets/Alert/alert.html">Documentation</a>
+            </li>
+    
         </ul>
         <ul class="nav-list nav-social-media">
             <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/__sanjay13"><i class="fab fa-twitter"></i></a> </li>
+                <a class="nav-link" href="https://twitter.com/__sanjay13"><i class="fab fa-twitter"></i></a> 
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/SanjayJatti"><i class="fab fa-github"></i></a></li>
+                <a class="nav-link" href="https://github.com/SanjayJatti"><i class="fab fa-github"></i></a>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a></li>
+                <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/"><i class="fab fa-linkedin"></i></a>
+            </li>
         </ul> 
     </header>
-      <!--------- sidebar---------->
+      <!--------- Drawer or sidmenu for smaller screens---------->
       <div id="side-nav" class="side-menu">
         <ul class = "side-menu-list">
             <a href="#" class="sidemenu-close-btn" onclick="closeSlideMenu()">&times;</a>
-            <a href = "">Avatar</a>
-            <a href = "">Alert</a>
-            <a href = "">Badges</a>
-            <a href = "">Buttons</a>
-            <a href = "">Cards</a>
-            <a href = "">Drawer</a>
-            <a href = "">Responsive Images</a>
-            <a href = "">Forms</a>
-            <a href = "">Modal</a>
-            <a href = "">Navbar</a>
-            <a href = "">List</a>
-            <a href = "">Responsive Grid</a>
-            <a href = "">Snackbar</a>
-            <a href = "">Typography</a>
+            <a href = "/Componets/Alert/alert.html">Alert</a>
+            <a href = "/Componets/Avatar/avatar.html" >Avatar</a>
+            <a href = "/Componets/Badge/badge.html">Badges</a>
+            <a href = "/Componets/Button/button.html">Buttons</a>
+            <a href = "/Componets/Card/card.html">Cards</a>
+            <a href = "/Componets/Chips/chips.html">Chips</a>
+            <a href = "/Componets/Drawer/drawer.html">Drawer</a>
+            <a href = "/Componets/Grid/grid.html">Grid</a>
+            <a href = "/Componets/Image/image.html">Images</a>
+            <a href = "/Componets/Input/input.html">Forms</a>
+            <a href = "/Componets/List/list.html"class="side-menu-active" >List</a>
+            <a href = "/Componets/Modal/modal.html" >Modal</a>
+            <a href = "/Componets/Navbar/navbar.html" >Navbar</a>
+            <a href = "/Componets/Rating/rating.html" >Rating</a>
+            <a href = "/Componets/Snackbar/snackbar.html" >Snackbar</a>
+            <a href = "/Componets/Typography/typography.html" >Typography</a>
         </ul>
     </div>
-
+      <!------ Sidebar for larger screens ------>
       <div class="sidebar">
         <ul class = "sidebar-list">
-            <a href = "" class = "sidebar-item">Avatar</a>
-            <a href = "" class = "sidebar-item ">Alert</a>
-            <a href = "" class = "sidebar-item">Badges</a>
-            <a href = "" class = "sidebar-item">Buttons</a>
-            <a href = "" class = "sidebar-item">Cards</a>
-            <a href = "" class = "sidebar-item ">Drawer</a>
-            <a href = "" class = "sidebar-item">Responsive Images</a>
-            <a href = "" class = "sidebar-item">Forms</a>
-            <a href = "" class = "sidebar-item">Modal</a>
-            <a href = "" class = "sidebar-item">Navbar</a>
-            <a href = "" class = "sidebar-item sidebar-active">List</a>
-            <a href = "" class = "sidebar-item">Responsive Grid</a>
-            <a href = "" class = "sidebar-item ">Snackbar</a>
-            <a href = "" class = "sidebar-item">Typography</a>
+            <a href = "/Componets/Alert/alert.htm" class ="sidebar-item">Alert</a>
+            <a href = "/Componets/Avatar/avatar.html" class ="sidebar-item">Avatar</a>
+            <a href = "/Componets/Badge/badge.html" class ="sidebar-item">Badges</a>
+            <a href = "/Componets/Button/button.html" class ="sidebar-item">Buttons</a>
+            <a href = "/Componets/Card/card.html" class ="sidebar-item">Cards</a>
+            <a href = "/Componets/Drawer/drawer.html" class ="sidebar-item">Chips</a>
+            <a href = "/Componets/Drawer/drawer.html" class ="sidebar-item">Drawer</a>
+            <a href = "/Componets/Grid/grid.html" class ="sidebar-item">Grid</a>
+            <a href = "/Componets/Image/image.html" class ="sidebar-item">Images</a>
+            <a href = "/Componets/Input/input.html" class ="sidebar-item ">Forms</a>
+            <a href = "/Componets/List/list.html" class ="sidebar-item sidebar-active">List</a>
+            <a href = "/Componets/Modal/modal.html" class ="sidebar-item">Modal</a>
+            <a href = "/Componets/Navbar/navbar.html" class ="sidebar-item">Navbar</a>
+            <a href = "/Componets/Rating/rating.html" class ="sidebar-item">Rating</a>
+            <a href = "/Componets/Snackbar/snackbar.html" class ="sidebar-item ">Snackbar</a>
+            <a href = "/Componets/Typography/typography.html" class ="sidebar-item">Typography</a>
         </ul>
     </div>
+   
       <!--------- List---------->
       <div class="page-wrapper">
           <h2>List</h2>
-          <p class="vertical-gutter-md">Lists are continuous, vertical indexes of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.</p>
+          <p class="margin-b-lg">Lists are continuous, vertical indexes of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.</p>
           <!----- Simple List ------->
-          <h4 class="vertical-gutter-md">Simple List</h4> 
-           <ul class="list-group vertical-gutter-lg m-auto">
+          <h4 class="margin-b-lg">Simple List</h4> 
+           <ul class="list-group margin-auto">
                <li class="list-item">First item</li>
                <li class="list-item">Second item</li>
                <li class="list-item">Third item</li>
                <li class="list-item">Fourth item</li>
                <li class="list-item">Fifth item</li>
            </ul>
-          <div class="carbon-container flex-center vertical-gutter-lg">
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=auto&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EFirst%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ESecond%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EThird%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EFourth%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EFifth%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E"
-            style="width: 476px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>          
+          <div class="code-snippet">
+            <iframe src="https://www.thiscodeworks.com/embed/620bc38b31e619001565ab88" style="width: 100%; height: 177px;" frameborder="0"></iframe>        
           </div>
           <!------ Notification list ------>
-          <h4  class="vertical-gutter-md">Notification List</h4>
-          <ul class="list-group vertical-gutter-lg m-auto">
+          <h4  class="margin-b-lg">Notification List</h4>
+          <ul class="list-group margin-auto">
               <li class="list-item">
                   <img class="avatar avatar-md" src="/Assets/avatar1.jpg" alt="avatar"> 
                   <span>Notification message is here</span>
@@ -115,14 +119,9 @@
               </li>
             </ul>
     
-          <div class="carbon-container flex-center vertical-gutter-lg">
-            <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=auto&width=680&ds=false&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-group%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ENotification%2520message%2520is%2520here%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ENotification%2520message%2520is%2520here%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ENotification%2520message%2520is%2520here%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-md%2522%2520src%253D%2522%252FAssets%252Favatar1.jpg%2522%2520alt%253D%2522avatar%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ENotification%2520message%2520is%2520here%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E"
-            style="width: 763px; height: 409px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-          </iframe>          
-          </div>
-          
+          <div class="code-snippet">
+            <iframe src="https://www.thiscodeworks.com/embed/620bc3bf31e619001565ab89" style="width: 100%; height: 320px;" frameborder="0"></iframe>          
+          </div>     
       </div>
 </body>
 </html>

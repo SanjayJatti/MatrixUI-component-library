@@ -4,9 +4,9 @@
     background-color: var(--white);
 }
 .list-item{
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
     border: 1px solid var(--light-secondary-color);
-    padding: 1.6rem;
+    padding: var(--scale-md);
     display: flex;
     align-items: center;
 }
@@ -14,11 +14,11 @@
     background-color: var(--light-primary-color);
 }
 .list-item span{
-    font-size: 1.6rem;
-    margin-left: 1.6rem;
+    font-size: var(--default-font-size);
+    margin-left: var(--scale-md);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
     .list-group{
         width: 100%;
     }

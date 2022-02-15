@@ -69,7 +69,7 @@ input[type='radio'] {
 	align-items: center;
 	gap: var(--scale-xs);
 }
-
+/* log in form */
 .form-title{
     align-self: center;
 }
