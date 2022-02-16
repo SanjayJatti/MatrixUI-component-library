@@ -6,9 +6,10 @@
 @import url("./Stylesheets/spacing.css");
 @import url("./Stylesheets/utility.css");
 
-@import url("./Layout/Header/header.css");
-@import url("./Layout/Sidebar/sidebar.css");
-@import url("/home.css");
+@import url("./Documentation/header.css");
+@import url("./Documentation/sidebar.css");
+@import url("./Documentation/home.css");
+
 @import url("./Componets/Alert/alert.css");
 @import url("./Componets/Avatar/avatar.css");
 @import url("./Componets/Badge/badge.css");
@@ -50,6 +51,7 @@ body{
     max-width:72vw;
 }
 
+/* media queries for medium size devices */
 @media only screen and (max-width: 680px) {
 
     .open-slide{
@@ -79,6 +81,7 @@ body{
         font-size: 1rem;
     }
 }
+/* media quries for mobile size devices */
 @media only screen and (max-width: 480px){
     *{
         font-size: 50%;
