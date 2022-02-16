@@ -25,9 +25,10 @@
 .footer{ 
     background: var(--white);
     padding: var(--scale-lg);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-weight: 800;
+    font-weight: bold;
+    border-top: 1px solid var(--light-secondary-color);
 }
+
 @media only screen and (max-width: 950px){
     .home-page-container{
         margin: auto;

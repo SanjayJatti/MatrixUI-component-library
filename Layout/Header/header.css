@@ -9,9 +9,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.8rem 1rem;
+    padding: var(--scale-sm);
     border-bottom: 1px solid var(--off-White);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--shadow-v3);
     z-index: var(--z-index-xl);
 }
 
@@ -21,11 +21,11 @@
 
 .open-slide i{
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: var(--scale-lg);
 }
 
 .header-title{
-  margin-left: 3rem;
+  margin-left: var(--scale-xl);
 }
 
 .header-title h2{
@@ -40,7 +40,7 @@
 
 .nav-list{
     display: flex;
-    gap: 1.5rem;
+    gap: var(--scale-md);
     list-style: none;
     align-items: center;
     font-weight: bold;
@@ -50,15 +50,14 @@
 .nav-items{
     justify-content: center;
     font-size: inherit;
-    margin-left: 3rem;
+    margin-left: var(--scale-xl);
 }
 
 .nav-link{
-    padding: 0.5rem;
+    padding: var(--scale-xs);
     color: var(--secondary-color);
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
     text-decoration: none;
-    margin-bottom: 0.3rem;
 }
 
 .nav-hover:hover{
@@ -66,12 +65,12 @@
 }
 
 .nav-link i{
-    font-size: 2rem;
+    font-size: var(--scale-lg);
 }
 
 .nav-social-media{
     margin-left:auto ;
-    margin-right: 3rem;
+    margin-right: var(--scale-xl);
 }
 
 .active{
