@@ -45,6 +45,9 @@
 }
 
 /* Classes for border-radius */
+.border-rounded-xxs {
+    border-radius: var(--scale-xxs);
+}
 
 .border-rounded-xs {
     border-radius: var(--scale-xs);
