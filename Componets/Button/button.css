@@ -6,7 +6,7 @@
     justify-content: center;
     border: none;
     border-radius: var(--scale-xxs);
-    padding: 0.8rem;
+    padding: 5px 8px;
     font-size: var(--default-font-size);
     cursor: pointer;
 }
