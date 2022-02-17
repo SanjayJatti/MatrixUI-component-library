@@ -152,7 +152,7 @@
 /* Padding classes */
 
 /*Padding extra small => 0.5rem */
-.padding-sm {
+.padding-xs{
     padding: var(--padding-xs);
 }
 .padding-y-xs {
@@ -294,7 +294,9 @@
 
 
 /* gap styles for both rows and columns */
-
+.gap-xs {
+    gap: var(--gap-xs);
+}
 .gap-sm {
     gap: var(--gap-sm);
 }
