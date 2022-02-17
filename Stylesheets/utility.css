@@ -26,6 +26,18 @@
     flex-wrap: wrap;
 }
 
+.justify-content-space-btw{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
 /* Classes for positioning */
   
 .center {
