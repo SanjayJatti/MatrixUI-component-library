@@ -117,8 +117,6 @@ To get the Font Awesome Icons, add the following line of code in the "head" tag 
 - Some Extra styles(Text Mark, Text Strike Through & Text Light Weight)
 
 ## Demo
-
-
-
+![Matrix-ui-gif](https://user-images.githubusercontent.com/88648908/154843084-719c8eba-2fbe-428d-9131-60d3b6edbb5c.gif)
 
 
