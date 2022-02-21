@@ -52,7 +52,7 @@
     padding: var(--scale-xs);
 }
 .btn-absolute i{
-    font-size: 1.6rem;
+    font-size:var(--default-font-size);
 }
 
 #badge-absolute{
@@ -68,8 +68,8 @@
     left: var(--scale-xxs);
     background-color: var(--off-white);
     padding: var(--scale-xs);
-    width: 1.6rem;
-    height: 1.6rem;
+    width: var(--scale-md);
+    height: var(--scale-md);
     border-radius: 50%;
 }
 

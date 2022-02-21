@@ -1,6 +1,6 @@
 .rating-container{
     background-color: var(--white);
-    padding: 1.6rem;
+    padding: var(--scale-md);
     width: 10rem;
     display: flex;
     justify-content: center;

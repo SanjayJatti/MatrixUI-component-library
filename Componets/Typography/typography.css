@@ -15,7 +15,7 @@ h3{
     line-height: 2.8rem;
 }
 h4{
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
     line-height: 2.4rem;
 }
 h5{
@@ -24,7 +24,7 @@ h5{
 }
 
 p{
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
     line-height: 2.4rem;
     text-align: justify;
 }
@@ -33,11 +33,11 @@ p{
     padding: 1rem;
     border: 2px solid var(--light-secondary-color);
     margin: 0.5rem; 
-    font-size: 1.6rem; 
+    font-size: var(--default-font-size); 
 }
 
 .text-small{
-    font-size: 1rem;
+    font-size: var(--scale-sm);
 }
 .text-medium{
     font-size: 1.4rem;

@@ -9,20 +9,24 @@
     opacity: 0.9;
     background-color: var(--secondary-color);
     overflow-x: hidden;
-    padding-top: 6rem;
+    overflow-y: auto;
+    padding-top: 8rem;
     transition: 0.5s;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .side-menu a{
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 0.7rem;
+    padding-left: 3rem;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
     display: block;
-    transition: 0.3s;
+    transition: var(--scale-xxs)s;
     color: var(--off-white);
-    display: block;
-    transition: 0.3s;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 .side-menu a:hover{
     color: var(--white);
@@ -46,7 +50,6 @@
 .sidebar{
     position: fixed;
     left: 0;
-    min-height: 88vh;
     top:12vh;
     width: 20vw;
 }
@@ -55,18 +58,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 88vh;
+    min-height: 88vh;
     border-right: 1px solid var(--light-secondary-color);
     text-align: center;
     background: var(--white);
 }
 
 .sidebar-item{
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
     font-weight:500;
     color: var(--secondary-color);
-    padding: 0.5rem;
-    display: inline;
+    padding: var(--scale-xs);
 }
 
 .sidebar-item:hover{
