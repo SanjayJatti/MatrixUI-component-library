@@ -16,6 +16,7 @@
     gap: var(--scale-sm);
     background: var(--white);
     border: 1px solid var(--light-secondary-color);
+    border-radius: var(--scale-md); 
 }
 .search-btn{
     height: var(--scale-sm);
