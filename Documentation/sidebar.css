@@ -33,9 +33,8 @@
     font-weight: bold;
 }
 
-.side-menu-active{
+.side-menu-active {
     font-weight: bold;
-    color: var(--white);
 }
 
 .side-menu .sidemenu-close-btn{
@@ -61,7 +60,7 @@
     min-height: 88vh;
     border-right: 1px solid var(--light-secondary-color);
     text-align: center;
-    background: var(--white);
+    /* background: var(--white); */
 }
 
 .sidebar-item{

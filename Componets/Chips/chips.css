@@ -10,6 +10,7 @@
 .chip{
     display: flex;
     background-color: var(--white);
+    color: var(--secondary-color);
     height: 2.2rem;
     border-radius: 2.2rem;
     align-items: center;

@@ -28,11 +28,6 @@
 @import url("./Componets/Snackbar/snackbar.css");
 @import url("./Componets/Typography/typography.css");
 
-
-body{
-    background-color: var(--white);
-}
-
 /* Documentation site utility classes */
 .code-snippet{
     width: 100%;
@@ -50,6 +45,36 @@ body{
     flex-direction: column;
     justify-content: space-between;
     max-width:72vw;
+}
+
+/* Dark mode styles */
+.dark-mode{
+    background-color: var(--dark-secondary-color);
+    color: var(--off-white)
+}
+
+.dark-mode .header-container,
+.dark-mode .footer,
+.dark-mode .nav-link,
+.dark-mode .sidebar-item,
+.dark-mode .open-slide i{
+    background-color: var(--dark-secondary-color);
+    color: var(--off-white);
+}
+
+.dark-mode .header-title span{
+    color: var(--primary-color);
+}
+
+
+.dark-mode .sidebar-item:hover,
+.dark-mode .sidebar-active{
+    background-color: var(--light-primary-color);
+    color: var(--secondary-color);
+}
+
+#dark-mode i{
+    color: var(--off-White);
 }
 
 /* media queries for medium size devices */

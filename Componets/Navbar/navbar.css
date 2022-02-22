@@ -1,5 +1,4 @@
 .navbar-container{
-    background-color: var(--white);
     max-width: 100%;
     height: 9vh;
     display: flex;
@@ -14,7 +13,6 @@
     height: var(--scale-sm);
     padding: var(--scale-sm);
     gap: var(--scale-sm);
-    background: var(--white);
     border: 1px solid var(--light-secondary-color);
     border-radius: var(--scale-md); 
 }

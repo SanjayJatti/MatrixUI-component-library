@@ -2,6 +2,7 @@
 .list-group{
     width: 40rem;
     background-color: var(--white);
+    color: var(--secondary-color);
 }
 .list-item{
     font-size: var(--default-font-size);

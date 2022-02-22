@@ -10,7 +10,6 @@
     <link rel="icon" type="image/png" href="/Assets/favicon_io/favicon.ico">
     <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/52c15eb80a.js" crossorigin="anonymous"></script>
-    <script src="/index.js"></script>
 </head>
 <body>
      <!--------- header---------->
@@ -38,6 +37,7 @@
                 <a class="nav-link" href="https://www.linkedin.com/in/sanjay-jatti-09a176140/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </li>
         </ul> 
+        <div id="dark-mode" class="dark-mode-toggler"><i class="fas fa-adjust"></i></div>
     </header>
     <!--------- Drawer or sidmenu for smaller screens---------->
     <div id="side-nav" class="side-menu">
@@ -86,7 +86,7 @@
     </div>  
       <!--------- Drawer---------->
     <div class="page-wrapper">
-        <h2>Drawer</h2>
+        <h2>Drawer & Hamburger</h2>
         <p class="margin-b-lg">The navigation drawer slides in from the left and contains the navigation destinations for your app.</br> Click on hamburger icon below to open the drawer</p>
         <div class="drawer-container margin-b-xl">
             <header class="drawer-header">
@@ -97,7 +97,7 @@
             </header>
             <div id="drawer" class="drawer-menu position-absolute">
                 <ul class = "drawer-menu-list">
-                    <a href="#" class="drawer-close-btn" onclick="closeSlideMenu()">&times;</a>
+                    <a href="#" class="drawer-close-btn" onclick="closeDrawer()">&times;</a>
                     <a href = "#" class="drawer-item">
                         <i class="fas fa-inbox"></i>
                         <span>Inbox</span></a>
@@ -120,14 +120,6 @@
             <iframe src="https://www.thiscodeworks.com/embed/620b516831e619001565aafc" style="width: 100%; height: 190px;" frameborder="0"></iframe>
         </div>
     </div>
-    
-    <script >
-        function openDrawer(){
-            document.getElementById("drawer").style.width = "25rem";
-        }
-        function closeSlideMenu(){
-            document.getElementById("drawer").style.width ="0";
-        }
-    </script>
+    <script src="/index.js"></script>
 </body>
 </html>

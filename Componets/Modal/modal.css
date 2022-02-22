@@ -1,5 +1,6 @@
 .modal-container{
     background-color: var(--white);
+    color: var(--secondary-color);
     max-width: 45rem;
     padding: var(--scale-md);
     display: flex;
