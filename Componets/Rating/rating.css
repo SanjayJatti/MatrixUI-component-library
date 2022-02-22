@@ -1,5 +1,4 @@
 .rating-container{
-    background-color: var(--white);
     padding: var(--scale-md);
     width: 10rem;
     display: flex;
@@ -12,8 +11,6 @@
 .rating-lg span{
     font-size: var(--scale-lg);
 }
-
-
 .rating-md span{
     font-size: var(--default-font-size);
 }

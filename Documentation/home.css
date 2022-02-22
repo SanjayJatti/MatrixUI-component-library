@@ -23,10 +23,11 @@
     padding: var(--scale-xxxl);
 }
 .footer{ 
-    background: var(--white);
     padding: var(--scale-lg);
     font-weight: bold;
     border-top: 1px solid var(--light-secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--white);
 }
 
 @media only screen and (max-width: 950px){

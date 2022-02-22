@@ -5,6 +5,7 @@
     justify-content: center;
     gap: var(--scale-sm);
     background-color: var(--white);
+    color: var(--secondary-color);
     padding: var(--scale-xl);
     border-radius: var(--scale-xs);
     box-shadow: var(--shadow);

@@ -1,6 +1,7 @@
 .card{
     position: relative;
     background-color: var(--white);
+    color: var(--secondary-color);
     border: 1px solid var(--light-secondary-color);
     border-radius: var(--scale-xxs);
 }

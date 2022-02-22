@@ -70,10 +70,17 @@
 
 .nav-social-media{
     margin-left:auto ;
-    margin-right: var(--scale-xl);
 }
 
 .active{
     border-bottom: 4px solid var(--primary-color);
     color: var(--primary-color);
+}
+
+#dark-mode i{
+    font-size: var(--scale-lg);
+    cursor: pointer;
+    margin-right: var(--scale-xl);
+    margin-left: var(--scale-md);
+    color: var(--secondary-color);
 }
